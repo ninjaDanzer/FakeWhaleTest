@@ -16,6 +16,11 @@
     <background>background\bg_primary_mockup</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\input_setup.gml</script>
+    <script>scripts\input_check.gml</script>
+    <script>scripts\input_movement_x.gml</script>
+  </scripts>
   <objects name="objects">
 <<<<<<< HEAD
     <object>objects\PlayerObject</object>
@@ -25,6 +30,8 @@
     <room>rooms\rm_level_mockup</room>
 =======
     <object>objects\Playerobject</object>
+    <object>objects\obj_init_controls</object>
+    <object>objects\obj_test_input</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
