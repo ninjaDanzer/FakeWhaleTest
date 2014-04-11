@@ -14,6 +14,7 @@
     <object>objects\PlayerObject</object>
     <object>objects\TestObject</object>
   </objects>
+  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
