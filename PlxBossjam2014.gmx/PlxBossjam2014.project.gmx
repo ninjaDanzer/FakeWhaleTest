@@ -15,11 +15,13 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\input_setup.gml</script>
-    <script>scripts\input_check.gml</script>
-    <script>scripts\input_check_pressed.gml</script>
-    <script>scripts\input_check_released.gml</script>
-    <script>scripts\input_movement_x.gml</script>
+    <scripts name="Input">
+      <script>scripts\input_setup.gml</script>
+      <script>scripts\input_check.gml</script>
+      <script>scripts\input_check_pressed.gml</script>
+      <script>scripts\input_check_released.gml</script>
+      <script>scripts\input_movement_x.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\PlayerObject</object>
@@ -28,7 +30,6 @@
     <object>objects\obj_test_input</object>
     <object>objects\BranchTesting</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\rm_level_mockup</room>
