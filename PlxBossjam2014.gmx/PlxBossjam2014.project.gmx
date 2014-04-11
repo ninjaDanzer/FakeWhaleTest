@@ -17,6 +17,8 @@
   <scripts name="scripts">
     <script>scripts\input_setup.gml</script>
     <script>scripts\input_check.gml</script>
+    <script>scripts\input_check_pressed.gml</script>
+    <script>scripts\input_check_released.gml</script>
     <script>scripts\input_movement_x.gml</script>
   </scripts>
   <objects name="objects">

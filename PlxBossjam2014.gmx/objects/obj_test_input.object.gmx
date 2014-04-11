@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>x += input_movement_x();
+
+if (input_check(BUTTON_ACTION)) {
+    y++;
+}
 </string>
           </argument>
         </arguments>
