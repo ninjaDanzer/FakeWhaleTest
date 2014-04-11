@@ -5,13 +5,14 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\RANDOM</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\PlayerObject</object>
   </objects>
-  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
