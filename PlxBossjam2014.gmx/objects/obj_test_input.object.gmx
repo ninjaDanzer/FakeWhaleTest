@@ -27,8 +27,11 @@
             <kind>1</kind>
             <string>x += input_movement_x();
 
-if (input_check(BUTTON_ACTION)) {
-    y++;
+if (input_check_pressed(BUTTON_ACTION)) {
+    y += 10;
+}
+if (input_check_pressed(BUTTON_CROUCH)) {
+    y -= 10;
 }
 </string>
           </argument>

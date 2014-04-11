@@ -21,12 +21,11 @@ if (gamepad_is_supported()) {
     }
 }
 
-// TODO - Save joystick state to get pressed/released
 // Joystick
 var i;
 for (i=1; i<2; i++) {
     if (joystick_exists(i)) {
-        if (joystick_check_button(i, global.buttons_joystick[argument0]))
+        if (!joystick_check_button(i, global.buttons_joystick[argument0]) and global.joystick_states[i, global.buttons_joystick[argument0]])
             return true;
     }
 }

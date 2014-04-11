@@ -15,3 +15,5 @@ global.buttons_joystick[BUTTON_CROUCH] = 2;
 
 global.keyboard_left = ord('A');
 global.keyboard_right = ord('D');
+
+input_update();

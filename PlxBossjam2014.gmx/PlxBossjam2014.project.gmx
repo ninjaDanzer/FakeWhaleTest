@@ -17,6 +17,7 @@
   <scripts name="scripts">
     <scripts name="Input">
       <script>scripts\input_setup.gml</script>
+      <script>scripts\input_update.gml</script>
       <script>scripts\input_check.gml</script>
       <script>scripts\input_check_pressed.gml</script>
       <script>scripts\input_check_released.gml</script>
@@ -28,7 +29,6 @@
     <object>objects\obj_tile_mockup</object>
     <object>objects\obj_init_controls</object>
     <object>objects\obj_test_input</object>
-    <object>objects\BranchTesting</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
