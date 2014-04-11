@@ -29,10 +29,11 @@
     <object>objects\obj_tile_mockup</object>
     <object>objects\obj_init_controls</object>
     <object>objects\obj_test_input</object>
+    <object>objects\obj_player</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_level_mockup</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

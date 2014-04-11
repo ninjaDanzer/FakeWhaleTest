@@ -52,6 +52,7 @@
   <instances>
     <instance objName="obj_test_input" x="128" y="160" name="inst_8BE4E85F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_init_controls" x="32" y="64" name="inst_E260E0C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="128" y="352" name="inst_BA8A797B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
