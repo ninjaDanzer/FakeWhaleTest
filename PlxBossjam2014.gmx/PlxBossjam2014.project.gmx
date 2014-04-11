@@ -25,8 +25,8 @@
     <object>objects\obj_test_input</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_level_mockup</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
