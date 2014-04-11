@@ -6,11 +6,8 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-<<<<<<< HEAD
     <sprite>sprites\sp_tile_mockup</sprite>
-=======
     <sprite>sprites\player</sprite>
->>>>>>> 5fa5061110058a7f403f15a669a1dc101f2ec12c
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -22,20 +19,14 @@
     <script>scripts\input_movement_x.gml</script>
   </scripts>
   <objects name="objects">
-<<<<<<< HEAD
     <object>objects\PlayerObject</object>
     <object>objects\obj_tile_mockup</object>
-  </objects>
-  <rooms name="rooms">
-    <room>rooms\rm_level_mockup</room>
-=======
-    <object>objects\Playerobject</object>
     <object>objects\obj_init_controls</object>
     <object>objects\obj_test_input</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
->>>>>>> 5fa5061110058a7f403f15a669a1dc101f2ec12c
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
