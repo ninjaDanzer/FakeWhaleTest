@@ -12,6 +12,7 @@
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
     <background>background\bg_tile_test</background>
+    <background>background\bg_mockup_one</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
