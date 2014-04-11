@@ -6,13 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\RANDOM</sprite>
+    <sprite>sprites\sp_tile_mockup</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_primary_mockup</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\PlayerObject</object>
+    <object>objects\obj_tile_mockup</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_level_mockup</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
