@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sp_tile_mockup</sprite>
     <sprite>sprites\player</sprite>
+    <sprite>sprites\Wrong</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -31,6 +32,8 @@
     <object>objects\obj_init_controls</object>
     <object>objects\obj_test_input</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_interaction_parent</object>
+    <object>objects\obj_interaction_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
