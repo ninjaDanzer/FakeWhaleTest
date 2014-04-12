@@ -134,13 +134,10 @@
       <object>objects\obj_interaction_parent</object>
     </objects>
     <objects name="testing stuff">
-      <object>objects\obj_PlayerObject_mockup_one</object>
       <object>objects\obj_player</object>
       <object>objects\obj_wall</object>
-      <object>objects\obj_enemy_mockup</object>
     </objects>
     <objects name="enemies">
-      <object>objects\obj_enemy_guarding</object>
       <object>objects\obj_enemy_parent</object>
     </objects>
     <objects name="controllers">
@@ -154,9 +151,9 @@
     <object>objects\obj_noise_overlay</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_slide_testing</room>
-    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
     <rooms name="Game Levels">
