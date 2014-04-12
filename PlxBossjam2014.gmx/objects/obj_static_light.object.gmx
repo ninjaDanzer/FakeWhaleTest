@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*Here we create a static light! Pretty simple.*/
+            <string>/// Create a static light
 light=
 ls_light_create(x,y,choose(192,256) * 2,360,0,
                 choose(c_red,c_green,c_orange,c_blue,c_purple),
