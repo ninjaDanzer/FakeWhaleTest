@@ -7,7 +7,9 @@
   <NewExtensions>
     <extension index="0">extensions\Easy Lighting Studio</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_whale_theme_song</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_tile_mockup</sprite>
     <sprite>sprites\sp_player_mockup</sprite>
