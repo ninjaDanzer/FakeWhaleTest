@@ -51,8 +51,10 @@
       <object>objects\obj_static_light</object>
       <object>objects\parent_light_block</object>
     </objects>
+    <object>objects\obj_enemy_guarding</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
   </rooms>
