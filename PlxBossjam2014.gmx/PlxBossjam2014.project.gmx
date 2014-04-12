@@ -63,6 +63,7 @@
     <sprite>sprites\sp_testslide</sprite>
     <sprite>sprites\sp_testslide_2</sprite>
     <sprite>sprites\obj_collision</sprite>
+    <sprite>sprites\sr_rgb_noise</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -137,11 +138,12 @@
       <object>objects\obj_slide_handler</object>
     </objects>
     <object>objects\obj_collision_block</object>
+    <object>objects\obj_noise_overlay</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\rm_danzer_testroom</room>
-    <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
     <rooms name="Game Levels">
