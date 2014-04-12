@@ -115,6 +115,7 @@
       <object>objects\obj_init_everything</object>
       <object>objects\obj_message_controller</object>
       <object>objects\obj_pause</object>
+      <object>objects\obj_slide_handler</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -122,6 +123,7 @@
     <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
+    <room>rooms\rm_slide_testing</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
