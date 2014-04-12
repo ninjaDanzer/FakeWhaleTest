@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>-1</persistent>
+  <depth>-100000</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,14 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Initialize controls
-input_setup();
+            <string>/// Initialize message queue system.
+message_init();
+displaying_message = false;
+message = "";
+image_alpha = 0;
+fade = 0;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,8 +53,41 @@ input_setup();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Update joystick buttons.
-input_update();
+            <string>/// Pick next message
+if (ds_queue_empty(global.message_queue)) {
+    displaying_message = false;
+} else {
+    message = ds_queue_dequeue(global.message_queue);
+    image_alpha = 0;
+    fade = 1;
+    alarm[0] = global.message_duration;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Fade out
+image_alpha = 1;
+fade = -1;
+alarm[1] = room_speed;
 </string>
           </argument>
         </arguments>
@@ -73,14 +110,50 @@ input_update();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Play music when crouching for some reason.
-if (input_check_pressed(BUTTON_CROUCH)) {
-    if (audio_music_is_playing()) {
-        audio_stop_music();
-    } else {
-        audio_play_music(snd_whale_theme_song, true);
-    }
-    message_push("Press fish to fish fish whale fish. Mammal.");
+            <string>/// Check for new messages and display them
+if (!displaying_message and !ds_queue_empty(global.message_queue)) {
+    message = ds_queue_dequeue(global.message_queue);
+    displaying_message = true;
+    alarm[0] = global.message_duration;
+    fade = 1;
+    image_alpha = 0;
+}
+
+image_alpha += fade / room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw active message
+if (displaying_message) {
+    draw_set_alpha(image_alpha);
+    draw_set_font(fnt_monty);
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_text(view_xview[0] + view_wview[0] / 2, view_yview[0] + view_hview[0] / 2, message);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_set_color(c_black);
+    draw_set_alpha(1);
 }
 </string>
           </argument>

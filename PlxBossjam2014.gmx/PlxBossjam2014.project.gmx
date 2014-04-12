@@ -39,6 +39,7 @@
     </scripts>
     <scripts name="Messages">
       <script>scripts\message_init.gml</script>
+      <script>scripts\message_push.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -67,6 +68,7 @@
       <object>objects\obj_static_light</object>
       <object>objects\parent_light_block</object>
     </objects>
+    <object>objects\obj_message_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_danzer_testroom</room>
