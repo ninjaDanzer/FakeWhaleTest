@@ -42,7 +42,7 @@
     <object>objects\obj_enemy_mockup</object>
     <object>objects\obj_interaction_parent</object>
     <object>objects\obj_interaction_test</object>
-    <object>objects\object7</object>
+    <object>objects\obj_enemy_parent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level_mockup</room>
