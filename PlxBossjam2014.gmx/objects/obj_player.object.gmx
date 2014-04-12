@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Cehck if the player crouches and modify movement speed
+            <string>//Check if the player crouches and modify movement speed
 var speed_multiplier;
 if(input_check(BUTTON_CROUCH)) {
     speed_multiplier = 0.5;
