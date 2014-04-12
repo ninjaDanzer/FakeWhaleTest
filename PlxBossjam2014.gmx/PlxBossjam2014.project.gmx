@@ -40,7 +40,7 @@
       <sprite>sprites\spr_LThumbstickLR</sprite>
       <sprite>sprites\spr_LThumbstickLRUD</sprite>
       <sprite>sprites\spr_LThumbstickPress</sprite>
-      <sprite>sprites\LThumbstickUD</sprite>
+      <sprite>sprites\spr_LThumbstickUD</sprite>
       <sprite>sprites\spr_LTrigger</sprite>
       <sprite>sprites\spr_RShoulder</sprite>
       <sprite>sprites\spr_RThumbstickLR</sprite>
@@ -67,6 +67,8 @@
     <scripts name="Messages">
       <script>scripts\message_init.gml</script>
       <script>scripts\message_push.gml</script>
+      <script>scripts\draw_message.gml</script>
+      <script>scripts\add_button_code.gml</script>
     </scripts>
     <script>scripts\make_noise.gml</script>
   </scripts>

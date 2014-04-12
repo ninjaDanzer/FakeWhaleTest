@@ -80,7 +80,7 @@ if (input_check_pressed(BUTTON_CROUCH)) {
     } else {
         audio_play_music(snd_whale_theme_song, true);
     }
-    message_push("Press fish to fish fish whale fish. Mammal.");
+    message_push("Press &lt;ButtonA&gt; to do stuff.");
 }
 </string>
           </argument>
