@@ -4,5 +4,5 @@
     Returns: None
 */
 
+global.just_resumed = true;
 room_goto(global.pause_room);
-room_persistent = global.pause_room_persistent;

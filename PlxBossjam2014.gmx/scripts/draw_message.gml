@@ -18,8 +18,8 @@ for (i=0; i<message_nr; i++) {
     for (control = 0; control<global.button_codes; control++) {
         var control_pos = string_pos(global.button_code[control, 0], messages[i]);
         if (control_pos != 0) {
-            messages[i+1] = string_delete(message[i], 1, control_pos + string_length(global.button_code[control, 0]) - 1);
-            messages[i] = string_copy(message[i], 1, control_pos - 1);
+            messages[i+1] = string_delete(messages[i], 1, control_pos + string_length(global.button_code[control, 0]) - 1);
+            messages[i] = string_copy(messages[i], 1, control_pos - 1);
             button_sprites[i] = global.button_code[control, 1];
             width += sprite_get_width(button_sprites[i]);
             message_nr++;

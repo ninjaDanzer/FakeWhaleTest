@@ -30,6 +30,7 @@ instance_create(0, 0, obj_init_controls);
 instance_create(0, 0, obj_message_controller);
 
 global.screen_surface = surface_create(1920, 1080);
+global.just_resumed = false;
 </string>
           </argument>
         </arguments>
@@ -77,6 +78,11 @@ global.screen_surface = surface_create(1920, 1080);
             <kind>1</kind>
             <string>/// Set view surface.
 view_surface_id[0] = global.screen_surface;
+
+if (global.just_resumed) {
+    room_persistent = global.pause_room_persistent;
+    global.just_resumed = false;
+}
 </string>
           </argument>
         </arguments>
