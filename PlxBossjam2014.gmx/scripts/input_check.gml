@@ -21,13 +21,4 @@ if (gamepad_is_supported()) {
     }
 }
 
-// Joystick
-var i;
-for (i=1; i<2; i++) {
-    if (joystick_exists(i)) {
-        if (joystick_check_button(i, global.buttons_joystick[argument0]))
-            return true;
-    }
-}
-
 return false;

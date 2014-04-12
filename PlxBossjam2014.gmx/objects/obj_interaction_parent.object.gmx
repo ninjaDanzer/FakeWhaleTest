@@ -82,14 +82,7 @@ if( (point_distance(enemy.x , (enemy.y),x,y) &lt; 50.0) &amp;&amp; (enemy.intera
           <argument>
             <kind>1</kind>
             <string>///if User defined event 0, change PlayerInteraction to true
-if(PlayerInteraction==true)
-{
-    PlayerInteraction=false;
-}  
-else if(PlayerInteraction==false)
-{
-    PlayerInteraction=true;
-}
+PlayerInteraction = !PlayerInteraction
 </string>
           </argument>
         </arguments>

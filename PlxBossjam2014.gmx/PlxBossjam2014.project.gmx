@@ -75,7 +75,6 @@
   <scripts name="scripts">
     <scripts name="Input">
       <script>scripts\input_setup.gml</script>
-      <script>scripts\input_update.gml</script>
       <script>scripts\input_check.gml</script>
       <script>scripts\input_check_pressed.gml</script>
       <script>scripts\input_check_released.gml</script>

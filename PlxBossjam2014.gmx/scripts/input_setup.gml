@@ -18,5 +18,3 @@ global.buttons_joystick[BUTTON_PAUSE] = 3;
 
 global.keyboard_left = ord('A');
 global.keyboard_right = ord('D');
-
-input_update();
