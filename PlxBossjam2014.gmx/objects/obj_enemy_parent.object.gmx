@@ -33,6 +33,54 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>interacts</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>movedir</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
@@ -77,7 +125,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//STATES
+            <string>///Enemy behaviour code
+//STATES
 // 0 = Idle
 // 1 = Suspicious
 // 2 = Surprised
@@ -91,8 +140,15 @@
 // 0 = stand still
 // 1.0 = right
 
+//Guard or patrol
 if(state == 0) {
     if(type == 0) {
+        if( (xstart+10) &lt; x) {
+            movedir = -1.0;
+        }
+        else if( (xstart-10) &gt; x){
+            movedir = 1.0;
+        }
     }
     else if(type == 1) {
         if( collision_rectangle(x,y, x+64,y, obj_tile_mockup, true, true) ) {
@@ -104,9 +160,11 @@ if(state == 0) {
             image_xscale = 1;
         }
     }
-    speed_modifier = 1.0;
+    speed_modifier = 1.5;
+    interacts = 0;
 }
 
+//Move towards player carefully, try to open doors.
 if(state == 1) {
     if( obj_player.x &lt; x) {
         movedir = -1.0;
@@ -114,18 +172,22 @@ if(state == 1) {
     else {
         movedir = 1.0;
     }
-    speed_modifier = 0.75;
+    speed_modifier = 1.0;
+    interacts = 1;
 }
 
+//The enemy is surprised, and soon goes into attack mode
 if(state == 2) {
     if( (alarm[0] &lt;= 0 )) {
         alarm[0] = room_speed * 2;
     }
     speed_modifier = 0;
+    interacts = 1;
 }
 
 if(state == 3) {
-    //placeholder
+    nearest_alarm = instance_nearest(x,y,obj_alarm);
+    if(
 }
 
 if(state == 4) {
@@ -136,6 +198,7 @@ if(state == 4) {
         movedir = 1.0;
     }
     speed_modifier = 1.25;
+    interacts = 1;
 }
 
 x += 1 * movedir * speed_modifier;

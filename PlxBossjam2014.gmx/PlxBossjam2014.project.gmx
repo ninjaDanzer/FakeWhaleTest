@@ -3,8 +3,13 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
-  <sounds name="sound"/>
+  <datafiles number="1" name="datafiles"/>
+  <NewExtensions>
+    <extension index="0">extensions\Easy Lighting Studio</extension>
+  </NewExtensions>
+  <sounds name="sound">
+    <sound>sound\snd_whale_theme_song</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_tile_mockup</sprite>
     <sprite>sprites\sp_player_mockup</sprite>
@@ -32,6 +37,9 @@
       <script>scripts\input_check_released.gml</script>
       <script>scripts\input_movement_x.gml</script>
     </scripts>
+    <scripts name="Messages">
+      <script>scripts\message_init.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_betty_noir</font>
@@ -51,10 +59,19 @@
     <object>objects\obj_wardrobe_back</object>
     <object>objects\obj_wardrobe_doors</object>
     <object>objects\obj_elevator_doors</object>
+    <object>objects\obj_enemy_guarding</object>
+    <object>objects\obj_init_everything</object>
+    <object>objects\obj_alarm</object>
+    <objects name="Light">
+      <object>objects\obj_light_controller</object>
+      <object>objects\obj_static_light</object>
+      <object>objects\parent_light_block</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_level_mockup</room>
+    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_level_mockup</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

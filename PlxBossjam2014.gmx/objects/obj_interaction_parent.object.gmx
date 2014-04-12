@@ -54,6 +54,11 @@ PlayerInteraction=false;
 if( (point_distance(obj_player.x , (obj_player.y-64),x, y ) &lt; 25.0) &amp;&amp; input_check(BUTTON_ACTION) ) {
     event_user(0);
 }
+
+var enemy = instance_nearest(x,y,obj_enemy_parent);
+if( (point_distance(enemy.x , (enemy.y),x,y) &lt; 25) &amp;&amp; enemy.interacts ){
+    event_user(1);
+}
 </string>
           </argument>
         </arguments>
