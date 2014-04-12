@@ -350,7 +350,8 @@
     <option_writeerrors>False</option_writeerrors>
   </Options>
   <ConfigConstants>
-    <constants number="2">
+    <constants number="3">
+      <constant name="BUTTON_PAUSE">2</constant>
       <constant name="BUTTON_CROUCH">1</constant>
       <constant name="BUTTON_ACTION">0</constant>
     </constants>
