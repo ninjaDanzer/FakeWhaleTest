@@ -154,8 +154,8 @@
     <object>objects\obj_noise_overlay</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_level_mockup</room>
+    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0;
+            <string>///Added bool PlayerInteraction and initialized it to false
+PlayerInteraction=false;
+image_speed=0;
 </string>
           </argument>
         </arguments>
