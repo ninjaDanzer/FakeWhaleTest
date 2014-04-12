@@ -64,6 +64,7 @@
     </objects>
     <objects name="Wardrobe">
       <object>objects\obj_wardrobe_back</object>
+      <object>objects\obj_wardrobe_doors</object>
     </objects>
     <object>objects\obj_enemy_guarding</object>
     <object>objects\obj_init_everything</object>
@@ -74,11 +75,13 @@
       <object>objects\parent_light_block</object>
     </objects>
     <object>objects\obj_message_controller</object>
+    <object>objects\obj_ventilation</object>
+    <object>objects\obj_door</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_danzer_testroom</room>
     <room>rooms\room0</room>
-    <room>rooms\rm_level_mockup</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

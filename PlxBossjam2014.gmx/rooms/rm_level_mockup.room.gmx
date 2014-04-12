@@ -468,9 +468,9 @@
     <instance objName="obj_tile_mockup" x="3648" y="0" name="inst_C92F4DA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tile_mockup" x="3712" y="0" name="inst_B409895C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tile_mockup" x="3776" y="0" name="inst_B6A63E64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_mockup" x="672" y="1824" name="inst_6BD01A45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_mockup" x="676" y="1936" name="inst_6BD01A45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="240" y="1598" name="inst_EECC048C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="108" y="1909" name="inst_74E542C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="125" y="1931" name="inst_74E542C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="192" y="1728" name="inst_4BF48B37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="736" y="1728" name="inst_996385EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1216" y="1728" name="inst_3C31DF30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
