@@ -133,13 +133,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-<<<<<<< HEAD
     <room>rooms\rm_slide_testing</room>
     <room>rooms\rm_danzer_testroom</room>
-=======
->>>>>>> 3834ee71ddcbb01db0b9397bc63b16bf5fcea5b7
     <room>rooms\rm_level_mockup</room>
-    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
   </rooms>
