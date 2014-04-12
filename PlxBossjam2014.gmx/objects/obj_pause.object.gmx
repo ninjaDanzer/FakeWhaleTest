@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>image_alpha += 1 / room_speed;
 
-if (input_check_pressed(BUTTON_CROUCH)) {
+if (input_check_pressed(BUTTON_SLAP)) {
     game_end();
 }
 </string>

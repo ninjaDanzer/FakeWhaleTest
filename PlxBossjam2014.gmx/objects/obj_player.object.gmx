@@ -76,6 +76,11 @@ else if(input_movement_x() &gt; 0)  {
 //move player
 x += input_movement_x() * speed_multiplier;
 
+//slap slap
+if(input_check_pressed(BUTTON_SLAP)){
+    image_index=sp_player_slap;
+}
+
 //fade player
 if(image_alpha&gt;0 &amp;&amp; PlayerHidden==true){
         image_alpha -= 0.02;
@@ -131,6 +136,29 @@ else if(PlayerHidden==true)
 {
     PlayerHidden=false;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_index=sp_player_mockup;
 </string>
           </argument>
         </arguments>

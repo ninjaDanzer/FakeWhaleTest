@@ -99,7 +99,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_over();
+            <string>audio_play_sound_at(snd_gunshot, obj_player.x - x, 0, -50, 200, 1000, 1, false, 1);
+game_over();
 </string>
           </argument>
         </arguments>
@@ -214,7 +215,7 @@ if(state == 0) {
             image_xscale = 1;
         }
     }
-    if(abs(x - obj_player.x) &lt; 600 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden) {
+    if(abs(x - obj_player.x) &lt; 600 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden and (y &gt; obj_player.y - 500 and y &lt; obj_player.y + 50)) {
         state = 3;
     }
     speed_modifier = 1.5;
@@ -234,7 +235,7 @@ if(state == 1) {
         movedir = 1.0;
         image_xscale = 1;
     }
-    if(abs(x - obj_player.x) &lt; 600 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden) {
+    if(abs(x - obj_player.x) &lt; 600 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden and (y &gt; obj_player.y - 500 and y &lt; obj_player.y + 50)) {
         state = 2;
     }
     speed_modifier = 1.0;
@@ -290,7 +291,7 @@ if(state == 4) {
         image_xscale = 1;
     }
     
-    if(abs(x - obj_player.x) &lt; 300 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden) {
+    if(abs(x - obj_player.x) &lt; 300 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden and (y &gt; obj_player.y - 500 and y &lt; obj_player.y + 50)) {
         state = 5;
         sprite_index = sp_guard_raise_gun;
         image_index = 0;

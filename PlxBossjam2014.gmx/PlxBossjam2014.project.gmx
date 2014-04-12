@@ -9,6 +9,7 @@
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_whale_theme_song</sound>
+    <sound>sound\snd_whale_creme_song</sound>
     <sound>sound\snd_whale_walking_first</sound>
     <sound>sound\snd_whale_walking_stone_second</sound>
     <sound>sound\snd_whale_slap</sound>
@@ -24,12 +25,14 @@
     <sound>sound\snd_wardrobe_open_close</sound>
     <sound>sound\snd_guard_suspicious</sound>
     <sound>sound\snd_boss_no_chance</sound>
+    <sound>sound\snd_gunshot</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\Wrong</sprite>
     <sprite>sprites\sp_tile_mockup</sprite>
     <sprite>sprites\sp_player_croch_walk</sprite>
     <sprite>sprites\sp_player_mockup</sprite>
+    <sprite>sprites\sp_player_slap</sprite>
     <sprite>sprites\sp_player_interact</sprite>
     <sprite>sprites\sp_tile_mockup_two</sprite>
     <sprite>sprites\sp_curtains_rev_one</sprite>
