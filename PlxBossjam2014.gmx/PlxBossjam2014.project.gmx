@@ -50,6 +50,7 @@
     <object>objects\obj_enemy_parent</object>
     <object>objects\obj_enemy_guarding</object>
     <object>objects\obj_init_everything</object>
+    <object>objects\obj_alarm</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_danzer_testroom</room>

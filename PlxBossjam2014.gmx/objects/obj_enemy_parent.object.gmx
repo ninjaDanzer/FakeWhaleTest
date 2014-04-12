@@ -125,7 +125,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//STATES
+            <string>///Enemy behaviour code
+//STATES
 // 0 = Idle
 // 1 = Suspicious
 // 2 = Surprised
@@ -159,7 +160,7 @@ if(state == 0) {
             image_xscale = 1;
         }
     }
-    speed_modifier = 1.0;
+    speed_modifier = 1.5;
     interacts = 0;
 }
 
@@ -171,7 +172,7 @@ if(state == 1) {
     else {
         movedir = 1.0;
     }
-    speed_modifier = 0.75;
+    speed_modifier = 1.0;
     interacts = 1;
 }
 
@@ -185,7 +186,8 @@ if(state == 2) {
 }
 
 if(state == 3) {
-    //placeholder
+    nearest_alarm = instance_nearest(x,y,obj_alarm);
+    if(
 }
 
 if(state == 4) {
