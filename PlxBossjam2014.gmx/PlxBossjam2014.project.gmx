@@ -11,6 +11,7 @@
     <sprite>sprites\sp_tile_mockup_two</sprite>
     <sprite>sprites\sp_curtains_rev_one</sprite>
     <sprite>sprites\sp_enemy_mockup</sprite>
+    <sprite>sprites\Wrong</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -27,6 +28,10 @@
       <script>scripts\input_movement_x.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_betty_noir</font>
+    <font>fonts\fnt_monty</font>
+  </fonts>
   <objects name="objects">
     <object>objects\PlayerObject</object>
     <object>objects\obj_tile_mockup</object>
@@ -35,6 +40,9 @@
     <object>objects\obj_player</object>
     <object>objects\obj_animation_curtains</object>
     <object>objects\obj_enemy_mockup</object>
+    <object>objects\obj_interaction_parent</object>
+    <object>objects\obj_interaction_test</object>
+    <object>objects\object7</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level_mockup</room>
