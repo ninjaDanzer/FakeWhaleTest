@@ -82,6 +82,7 @@ view_surface_id[0] = global.screen_surface;
 
 if (global.just_resumed) {
     room_persistent = global.pause_room_persistent;
+    instance_activate_object(obj_message_controller);
     global.just_resumed = false;
 }
 
