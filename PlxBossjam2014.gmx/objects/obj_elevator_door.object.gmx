@@ -50,6 +50,8 @@
             <kind>1</kind>
             <string>event_inherited();
 image_speed=0.1;
+obj_player.x = endpoint_x;
+obj_player.y = endpoint_y;
 </string>
           </argument>
         </arguments>
