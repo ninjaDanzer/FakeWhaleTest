@@ -25,6 +25,26 @@
     <sprite>sprites\sp_door</sprite>
     <sprite>sprites\sp_ventilation</sprite>
     <sprite>sprites\sp_elevator_back</sprite>
+    <sprites name="Controls">
+      <sprite>sprites\spr_ButtonA</sprite>
+      <sprite>sprites\spr_ButtonB</sprite>
+      <sprite>sprites\spr_ButtonBack</sprite>
+      <sprite>sprites\spr_ButtonStart</sprite>
+      <sprite>sprites\spr_ButtonX</sprite>
+      <sprite>sprites\spr_ButtonY</sprite>
+      <sprite>sprites\spr_LShoulder</sprite>
+      <sprite>sprites\spr_LThumbstickLR</sprite>
+      <sprite>sprites\spr_LThumbstickLRUD</sprite>
+      <sprite>sprites\spr_LThumbstickPress</sprite>
+      <sprite>sprites\LThumbstickUD</sprite>
+      <sprite>sprites\spr_LTrigger</sprite>
+      <sprite>sprites\spr_RShoulder</sprite>
+      <sprite>sprites\spr_RThumbstickLR</sprite>
+      <sprite>sprites\spr_RThumbstickLRUD</sprite>
+      <sprite>sprites\spr_RThumbstickPress</sprite>
+      <sprite>sprites\spr_RThumbstickUD</sprite>
+      <sprite>sprites\spr_RTrigger</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
