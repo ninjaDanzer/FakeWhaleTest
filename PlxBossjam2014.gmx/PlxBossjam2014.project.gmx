@@ -22,6 +22,7 @@
     <sprite>sprites\sp_wardrobe_doors</sprite>
     <sprite>sprites\sp_door</sprite>
     <sprite>sprites\sp_ventilation</sprite>
+    <sprite>sprites\sp_elevator_back</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -57,9 +58,14 @@
     <object>objects\obj_interaction_parent</object>
     <object>objects\obj_interaction_test</object>
     <object>objects\obj_enemy_parent</object>
-    <object>objects\obj_wardrobe_back</object>
-    <object>objects\obj_wardrobe_doors</object>
-    <object>objects\obj_elevator_doors</object>
+    <objects name="Elevator">
+      <object>objects\obj_elevator_doors</object>
+      <object>objects\obj_elevator_back</object>
+    </objects>
+    <objects name="Wardrobe">
+      <object>objects\obj_wardrobe_doors</object>
+      <object>objects\obj_wardrobe_back</object>
+    </objects>
     <object>objects\obj_enemy_guarding</object>
     <object>objects\obj_init_everything</object>
     <object>objects\obj_alarm</object>

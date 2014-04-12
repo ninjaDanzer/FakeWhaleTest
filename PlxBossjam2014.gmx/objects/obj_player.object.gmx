@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Add global variable to tell if hiddel or not.
 PlayerHidden= false;
-image_speed=0.1;
+image_speed=0;
 </string>
           </argument>
         </arguments>
@@ -76,6 +76,14 @@ if(image_alpha&gt;0 &amp;&amp; PlayerHidden==true){
 }
 if(image_alpha&lt;1 &amp;&amp; PlayerHidden==false){
         image_alpha += 0.01;
+}
+
+//Switch stationary and moving
+if(input_movement_x()==0){
+    image_speed=0;
+}
+else{
+    image_speed=0.1;
 }
 </string>
           </argument>
