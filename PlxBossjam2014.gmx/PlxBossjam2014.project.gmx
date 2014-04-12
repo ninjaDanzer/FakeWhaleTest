@@ -3,7 +3,10 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <datafiles number="1" name="datafiles"/>
+  <NewExtensions>
+    <extension index="0">extensions\Easy Lighting Studio</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sp_tile_mockup</sprite>
@@ -43,6 +46,11 @@
     <object>objects\obj_interaction_parent</object>
     <object>objects\obj_interaction_test</object>
     <object>objects\obj_enemy_parent</object>
+    <objects name="Light">
+      <object>objects\obj_light_controller</object>
+      <object>objects\obj_static_light</object>
+      <object>objects\parent_light_block</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level_mockup</room>
