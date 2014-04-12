@@ -91,6 +91,7 @@
     <background>background\bg_tile</background>
     <background>background\bg_real_tileset</background>
     <background>background\bg_newspaper</background>
+    <background>background\bg_sky</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -166,8 +167,8 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Game Levels">
-      <room>rooms\Intermission_1</room>
       <room>rooms\Level_1</room>
+      <room>rooms\Intermission_1</room>
     </rooms>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_danzer_testroom</room>
