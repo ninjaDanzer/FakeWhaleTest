@@ -173,7 +173,7 @@ if(state == 1) {
         movedir = 1.0;
     }
     speed_modifier = 1.0;
-    interacts = 1;
+    interacts = 0;
 }
 
 //The enemy is surprised, and soon goes into attack mode
@@ -182,7 +182,7 @@ if(state == 2) {
         alarm[0] = room_speed * 2;
     }
     speed_modifier = 0;
-    interacts = 1;
+    interacts = 0;
 }
 
 if(state == 3) {
