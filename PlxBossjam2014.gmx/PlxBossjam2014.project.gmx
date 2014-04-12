@@ -91,6 +91,7 @@
     <background>background\bg_tile</background>
     <background>background\bg_real_tileset</background>
     <background>background\bg_sky</background>
+    <background>background\bg_newspaper</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -121,6 +122,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_betty_noir</font>
     <font>fonts\fnt_monty</font>
+    <font>fonts\fnt_narkism</font>
   </fonts>
   <objects name="objects">
     <objects name="Light">
@@ -158,19 +160,22 @@
       <object>objects\obj_pause</object>
       <object>objects\obj_game_over</object>
       <object>objects\obj_slide_handler</object>
+      <object>objects\obj_news_controller</object>
     </objects>
     <object>objects\obj_collision_block</object>
     <object>objects\obj_noise_overlay</object>
   </objects>
   <rooms name="rooms">
+    <rooms name="Game Levels">
+      <room>rooms\Intermission_1</room>
+      <room>rooms\Level_1</room>
+    </rooms>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
-    <rooms name="Game Levels">
-      <room>rooms\Level_1</room>
-    </rooms>
+    <room>rooms\rm_game_over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

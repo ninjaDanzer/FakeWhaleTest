@@ -54,6 +54,9 @@
     <instance objName="obj_door" x="1894" y="3840" name="inst_C9D4EF51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="1382" y="2880" name="inst_A59C50FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="1856" y="3904" name="inst_E94A8C06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="1969" y="4033" name="inst_C9D4EF51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="1457" y="3072" name="inst_A59C50FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1897" y="4023" name="inst_E94A8C06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_real_tileset" x="0" y="4032" w="64" h="64" xo="0" yo="0" id="10000001" name="inst_07232885" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
