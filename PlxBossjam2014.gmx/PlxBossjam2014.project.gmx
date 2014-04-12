@@ -79,6 +79,7 @@
     <sprite>sprites\sp_testslide_2</sprite>
     <sprite>sprites\obj_collision</sprite>
     <sprite>sprites\sr_rgb_noise</sprite>
+    <sprite>sprites\sp_newspaper</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
