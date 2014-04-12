@@ -24,6 +24,7 @@
     <sound>sound\snd_wardrobe_open_close</sound>
     <sound>sound\snd_guard_suspicious</sound>
     <sound>sound\snd_boss_no_chance</sound>
+    <sound>sound\snd_gunshot</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\Wrong</sprite>

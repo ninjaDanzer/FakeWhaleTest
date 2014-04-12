@@ -99,7 +99,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_over();
+            <string>audio_play_sound_at(snd_gunshot, obj_player.x - x, 0, 0, 200, 1000, 1, false, 1);
+game_over();
 </string>
           </argument>
         </arguments>
