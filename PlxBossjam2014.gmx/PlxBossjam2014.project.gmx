@@ -26,6 +26,7 @@
     <sound>sound\snd_boss_no_chance</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\Wrong</sprite>
     <sprite>sprites\sp_tile_mockup</sprite>
     <sprite>sprites\sp_player_croch_walk</sprite>
     <sprite>sprites\sp_player_mockup</sprite>
@@ -33,13 +34,18 @@
     <sprite>sprites\sp_tile_mockup_two</sprite>
     <sprite>sprites\sp_curtains_rev_one</sprite>
     <sprite>sprites\sp_enemy_mockup</sprite>
-    <sprite>sprites\Wrong</sprite>
-    <sprite>sprites\sp_elevator_doors</sprite>
-    <sprite>sprites\sp_wardrobe_back</sprite>
-    <sprite>sprites\sp_wardrobe_doors</sprite>
-    <sprite>sprites\sp_door</sprite>
-    <sprite>sprites\sp_ventilation</sprite>
     <sprite>sprites\sp_elevator_back</sprite>
+    <sprite>sprites\sp_elevator_doors</sprite>
+    <sprite>sprites\sp_ventilation</sprite>
+    <sprite>sprites\sp_wall</sprite>
+    <sprites name="Wardrobe">
+      <sprite>sprites\sp_wardrobe_back</sprite>
+      <sprite>sprites\sp_wardrobe_doors</sprite>
+    </sprites>
+    <sprites name="Door">
+      <sprite>sprites\sp_door</sprite>
+      <sprite>sprites\sp_door_open</sprite>
+    </sprites>
     <sprites name="Controls">
       <sprite>sprites\spr_ButtonA</sprite>
       <sprite>sprites\spr_ButtonB</sprite>
@@ -59,6 +65,12 @@
       <sprite>sprites\spr_RThumbstickPress</sprite>
       <sprite>sprites\spr_RThumbstickUD</sprite>
       <sprite>sprites\spr_RTrigger</sprite>
+    </sprites>
+    <sprites name="Guard">
+      <sprite>sprites\sp_guard_walking</sprite>
+      <sprite>sprites\sp_guard_raise_gun</sprite>
+      <sprite>sprites\sp_guard_lower_gun</sprite>
+      <sprite>sprites\sp_guard_standing</sprite>
     </sprites>
     <sprite>sprites\sp_testslide</sprite>
     <sprite>sprites\sp_testslide_2</sprite>
@@ -106,6 +118,7 @@
     <objects name="interactables">
       <objects name="Elevator">
         <object>objects\obj_elevator_back</object>
+        <object>objects\obj_elevator_door</object>
       </objects>
       <objects name="Wardrobe">
         <object>objects\obj_wardrobe_back</object>
@@ -120,6 +133,7 @@
     <objects name="testing stuff">
       <object>objects\obj_PlayerObject_mockup_one</object>
       <object>objects\obj_player</object>
+      <object>objects\obj_wall</object>
       <object>objects\obj_enemy_mockup</object>
     </objects>
     <objects name="enemies">
@@ -135,9 +149,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\rm_danzer_testroom</room>
-    <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
   </rooms>

@@ -84,7 +84,7 @@ if( (point_distance(enemy.x , (enemy.y),x,y) &lt; 50.0) &amp;&amp; (enemy.intera
             <string>///if User defined event 0, change PlayerInteraction to true
 if(PlayerInteraction==true)
 {
-    PlayerInteraction=false;
+  PlayerInteraction=false;
 }  
 else if(PlayerInteraction==false)
 {
