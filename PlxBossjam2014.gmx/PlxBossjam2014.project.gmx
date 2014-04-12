@@ -43,11 +43,12 @@
     <object>objects\obj_interaction_parent</object>
     <object>objects\obj_interaction_test</object>
     <object>objects\obj_enemy_parent</object>
+    <object>objects\obj_enemy_guarding</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
-    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
