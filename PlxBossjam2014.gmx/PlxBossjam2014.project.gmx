@@ -8,10 +8,12 @@
   <sprites name="sprites">
     <sprite>sprites\sp_tile_mockup</sprite>
     <sprite>sprites\player</sprite>
+    <sprite>sprites\sp_tile_mockup_two</sprite>
+    <sprite>sprites\sp_curtains_rev_one</sprite>
+    <sprite>sprites\sp_enemy_mockup</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
-    <background>background\bg_tile_test</background>
     <background>background\bg_mockup_one</background>
   </backgrounds>
   <paths name="paths"/>
@@ -31,10 +33,12 @@
     <object>objects\obj_init_controls</object>
     <object>objects\obj_test_input</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_animation_curtains</object>
+    <object>objects\obj_enemy_mockup</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\rm_level_mockup</room>
+    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
