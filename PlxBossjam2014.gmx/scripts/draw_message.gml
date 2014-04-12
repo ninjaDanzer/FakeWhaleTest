@@ -35,7 +35,7 @@ for (i=0; i<message_nr; i++) {
     xx += string_width(messages[i]);
     
     if (i < message_nr - 1) {
-        draw_sprite_ext(button_sprites[i], 0, xx, argument1 - sprite_get_height(button_sprites[i] / 2), 1, 1, 0, c_white, draw_get_alpha());
+        draw_sprite_ext(button_sprites[i], 0, xx, argument1 - sprite_get_height(button_sprites[i]) / 2, 1, 1, 0, c_white, draw_get_alpha());
         xx += sprite_get_width(button_sprites[i]);
     }
 }

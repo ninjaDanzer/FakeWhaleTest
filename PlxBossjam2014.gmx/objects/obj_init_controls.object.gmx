@@ -61,11 +61,11 @@ if (input_check_pressed(BUTTON_CROUCH)) {
 
 // Pause game
 if (input_check_pressed(BUTTON_PAUSE)) {
-    /*if (room != rm_pause) {
+    if (room != rm_pause) {
         pause_game();
     } else {
         resume_game();
-    }*/
+    }
 }
 </string>
           </argument>

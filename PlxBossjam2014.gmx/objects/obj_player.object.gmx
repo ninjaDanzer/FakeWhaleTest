@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Add global variable to tell if hiddel or not.
-PlayerHidden= false;
-//PlayerInteracting=false;
+            <string>///Add variable to tell if hidden or not.
+PlayerHidden = false;
+PlayerInteracting = false;
 //audio_play_sound(snd_whale_walking_first, 100, true);
 audio_play_sound(snd_whale_walking_stone_second, 100, true);
 image_speed=0;

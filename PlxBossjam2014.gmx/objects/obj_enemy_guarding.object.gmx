@@ -49,7 +49,9 @@ type = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_message("Enemy guarding heard some noise.");
+            <string>if (state &lt; 1) {
+    state = 1;
+}
 </string>
           </argument>
         </arguments>
@@ -92,32 +94,6 @@ draw_text(92, 32, alarm[1]);
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="10" enumb="13">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>state</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>state+1</string>
-          </argument>
-        </arguments>
       </action>
     </event>
   </events>
