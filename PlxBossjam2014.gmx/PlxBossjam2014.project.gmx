@@ -74,6 +74,9 @@
     <script>scripts\pause_game.gml</script>
     <script>scripts\resume_game.gml</script>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shader_grayscale.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\fnt_betty_noir</font>
     <font>fonts\fnt_monty</font>
