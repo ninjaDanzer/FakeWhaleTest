@@ -228,13 +228,13 @@ if(state == 2) {
     interacts = 0;
 }
 
+//Enemy is trying to find an alarm, if there isn't any on current level it will go to state 4
 if(state == 3) {
     if( (alarm[1] &lt;= 0 )) {
         alarm[1] = room_speed * 10;
     }
     nearest_alarm = instance_nearest(x,y,obj_alarm);
-    if( (nearest_alarm.y &gt; y+224) || (nearest_alarm.y &lt; y-224) ) {
-        show_message("meep");
+    if( ( (nearest_alarm.y &gt; y+224) || (nearest_alarm.y &lt; y-224) ) &amp;&amp; global.alarm_on == 1 ) {
         state = 4;
     }
     else {
@@ -251,6 +251,7 @@ if(state == 3) {
     interacts = 1;
 }
 
+//Try to find and murder player
 if(state == 4) {
     if( (alarm[1] &lt;= 0 )) {
         alarm[1] = room_speed * 10;
