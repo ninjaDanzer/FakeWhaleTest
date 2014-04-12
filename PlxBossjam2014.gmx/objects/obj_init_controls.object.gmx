@@ -73,7 +73,7 @@ input_update();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Play music when crouching for some reason.
+            <string>/// Play music when crouching for some reason. Pause.
 if (input_check_pressed(BUTTON_CROUCH)) {
     if (audio_music_is_playing()) {
         audio_stop_music();
@@ -81,6 +81,15 @@ if (input_check_pressed(BUTTON_CROUCH)) {
         audio_play_music(snd_whale_theme_song, true);
     }
     message_push("Press &lt;ButtonA&gt; to do stuff.");
+}
+
+// Pause game
+if (input_check_pressed(BUTTON_PAUSE)) {
+    if (room != rm_pause) {
+        pause_game();
+    } else {
+        resume_game();
+    }
 }
 </string>
           </argument>
