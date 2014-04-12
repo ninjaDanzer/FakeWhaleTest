@@ -98,7 +98,7 @@ else{
 
 // Temporary nosie test code
 if (input_check_pressed(BUTTON_ACTION)) {
-    make_noise(x, y, 300);
+    make_noise(x, y, 600);
 }
 </string>
           </argument>

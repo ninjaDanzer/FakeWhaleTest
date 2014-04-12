@@ -106,6 +106,7 @@
       <script>scripts\pause_game.gml</script>
       <script>scripts\resume_game.gml</script>
     </scripts>
+    <script>scripts\game_over.gml</script>
     <script>scripts\change_slide.gml</script>
   </scripts>
   <shaders name="shaders">
@@ -149,17 +150,19 @@
       <object>objects\obj_init_everything</object>
       <object>objects\obj_message_controller</object>
       <object>objects\obj_pause</object>
+      <object>objects\obj_game_over</object>
       <object>objects\obj_slide_handler</object>
     </objects>
     <object>objects\obj_collision_block</object>
     <object>objects\obj_noise_overlay</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_level_mockup</room>
+    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
+    <room>rooms\rm_game_over</room>
     <rooms name="Game Levels">
       <room>rooms\Level_1</room>
     </rooms>
