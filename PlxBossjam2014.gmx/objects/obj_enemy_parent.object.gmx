@@ -164,13 +164,16 @@ if(state == 0) {
     interacts = 0;
 }
 
-//Move towards player carefully, try to open doors.
+//Move towards player carefully.
 if(state == 1) {
     if( obj_player.x &lt; x) {
         movedir = -1.0;
     }
     else {
         movedir = 1.0;
+    }
+    if(abs(x - obj_player.x) &lt; 300) {
+        state = 2;
     }
     speed_modifier = 1.0;
     interacts = 0;
@@ -193,9 +196,11 @@ if(state == 3) {
     else {
         if( nearest_alarm.x &lt; x) {
             movedir = -1.0;
+            image_xscale = -1;
         }
         else {
             movedir = 1.0;
+            image_xscale = 1;
         }
     }
     speed_modifier = 1.25;
@@ -205,9 +210,11 @@ if(state == 3) {
 if(state == 4) {
     if( obj_player.x &lt; x) {
         movedir = -1.0;
+        image_xscale = -1;
     }
     else {
         movedir = 1.0;
+        image_xscale = 1;
     }
     speed_modifier = 1.5;
     interacts = 1;
