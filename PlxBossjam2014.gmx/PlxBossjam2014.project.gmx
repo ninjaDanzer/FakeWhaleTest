@@ -71,8 +71,10 @@
       <script>scripts\add_button_code.gml</script>
     </scripts>
     <script>scripts\make_noise.gml</script>
-    <script>scripts\pause_game.gml</script>
-    <script>scripts\resume_game.gml</script>
+    <scripts name="Pausing">
+      <script>scripts\pause_game.gml</script>
+      <script>scripts\resume_game.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader_grayscale.shader</shader>

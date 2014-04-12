@@ -83,9 +83,13 @@ draw_surface_ext(global.screen_surface, 0, 0, 1, 1, 0, c_white, image_alpha);
 shader_reset();
 
 // Text
+draw_set_color(c_white);
+draw_set_font(fnt_betty_noir);
 draw_message(room_width / 2, room_height / 4, "Paused");
-draw_message(room_width / 2, room_height / 2 - 100, "Press &lt;ButtonStart&gt; to resume.");
-draw_message(room_width / 2, room_height / 2 + 100, "Press &lt;ButtonB&gt; to quit.");
+draw_set_font(fnt_monty);
+draw_message(room_width / 2, room_height / 2 - 50, "Press &lt;ButtonStart&gt; to resume.");
+draw_message(room_width / 2, room_height / 2 + 50, "Press &lt;ButtonB&gt; to quit.");
+draw_set_color(c_black);
 </string>
           </argument>
         </arguments>
