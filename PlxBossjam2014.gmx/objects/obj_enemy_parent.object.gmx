@@ -187,7 +187,19 @@ if(state == 2) {
 
 if(state == 3) {
     nearest_alarm = instance_nearest(x,y,obj_alarm);
-    if(
+    if( (nearest_alarm.y &gt; y+224) || (nearest_alarm.y &lt; y-224) ) {
+        state = 4;
+    }
+    else {
+        if( nearest_alarm.x &lt; x) {
+            movedir = -1.0;
+        }
+        else {
+            movedir = 1.0;
+        }
+    }
+    speed_modifier = 1.25;
+    interacts = 1;
 }
 
 if(state == 4) {
@@ -197,7 +209,7 @@ if(state == 4) {
     else {
         movedir = 1.0;
     }
-    speed_modifier = 1.25;
+    speed_modifier = 1.5;
     interacts = 1;
 }
 

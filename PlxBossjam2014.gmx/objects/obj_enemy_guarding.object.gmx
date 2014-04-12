@@ -49,7 +49,8 @@ type = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(32,32,state)
+            <string>draw_text(32,32,state);
+draw_text(64,32,interacts);
 </string>
           </argument>
         </arguments>
