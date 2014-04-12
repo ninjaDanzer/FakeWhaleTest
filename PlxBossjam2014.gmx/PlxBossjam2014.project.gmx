@@ -49,6 +49,7 @@
     <object>objects\obj_interaction_test</object>
     <object>objects\obj_enemy_parent</object>
     <object>objects\obj_enemy_guarding</object>
+    <object>objects\obj_init_everything</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_danzer_testroom</room>
