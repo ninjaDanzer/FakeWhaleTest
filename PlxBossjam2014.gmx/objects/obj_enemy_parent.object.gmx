@@ -202,7 +202,7 @@ if(state == 1) {
     if( (alarm[1] &lt;= 0 )) {
         alarm[1] = room_speed * 10;
     }
-    if( obj_player.x &lt; x) {
+    if( noise_source_x &lt; x) {
         movedir = -1.0;
         image_xscale = -1;
     }
@@ -210,7 +210,7 @@ if(state == 1) {
         movedir = 1.0;
         image_xscale = 1;
     }
-    if(abs(x - obj_player.x) &lt; 600) {
+    if(abs(x - obj_player.x) &lt; 600 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden) {
         state = 2;
     }
     speed_modifier = 1.0;
@@ -235,7 +235,7 @@ if(state == 3) {
         alarm[1] = room_speed * 10;
     }
     nearest_alarm = instance_nearest(x,y,obj_alarm);
-    if( nearest_alarm and ( (nearest_alarm.y &gt; y+224) || (nearest_alarm.y &lt; y-224) ) &amp;&amp; global.alarm_on == 1 ) {
+    if( nearest_alarm == noone or ( (nearest_alarm.y &gt; y+224) || (nearest_alarm.y &lt; y-224) ) or global.alarm_on == 1 ) {
         state = 4;
     }
     else {
