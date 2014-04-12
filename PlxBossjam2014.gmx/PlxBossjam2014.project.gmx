@@ -26,6 +26,7 @@
     <sound>sound\snd_guard_suspicious</sound>
     <sound>sound\snd_boss_no_chance</sound>
     <sound>sound\snd_gunshot</sound>
+    <sound>sound\snd_victory</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\Wrong</sprite>
