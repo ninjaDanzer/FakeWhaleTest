@@ -61,9 +61,9 @@ if (input_check_pressed(BUTTON_CROUCH)) {
 
 // Pause game
 if (input_check_pressed(BUTTON_PAUSE)) {
-    if (room != rm_pause) {
+    if (room != rm_pause and room != game_over) {
         pause_game();
-    } else {
+    } else if (room != game_over) {
         resume_game();
     }
 }

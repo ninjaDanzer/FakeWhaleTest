@@ -82,6 +82,30 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_play_sound_at(snd_gunshot, obj_player.x - x, 0, -50, 200, 1000, 1, false, 1);
+game_over();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -156,6 +180,7 @@ state = state - 1;
 // 2 = Surprised
 // 3 = Sound alarm
 // 4 = Attack player
+// 5 = Shoot player, all is lost
 //TYPES
 // 0 = stands still
 // 1 = patrols
@@ -265,8 +290,24 @@ if(state == 4) {
         movedir = 1.0;
         image_xscale = 1;
     }
+    
+    if(abs(x - obj_player.x) &lt; 300 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden) {
+        state = 5;
+        sprite_index = sp_guard_raise_gun;
+        image_index = 0;
+        image_speed = 0.2;
+        movedir = 0;
+    }
+    
     speed_modifier = 1.5;
     interacts = 1;
+}
+
+if (state == 5) {
+    if (image_index == image_number - 1 and alarm[4] &lt;= 0) {
+        image_speed = 0;
+        alarm[4] = room_speed / 2;
+    }
 }
 
 x += 1 * movedir * speed_modifier;
