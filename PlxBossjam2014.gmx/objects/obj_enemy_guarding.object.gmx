@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited()
-type = 1;
+type = 0;
 </string>
           </argument>
         </arguments>
@@ -74,6 +74,7 @@ type = 1;
             <kind>1</kind>
             <string>draw_text(32,32,state);
 draw_text(64,32,interacts);
+draw_text(92, 32, alarm[1]);
 </string>
           </argument>
         </arguments>

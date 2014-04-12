@@ -82,6 +82,29 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = state - 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -144,11 +167,17 @@
 if(state == 0) {
     if(type == 0) {
         if( (xstart+10) &lt; x) {
+            image_xscale = -1;
             movedir = -1.0;
         }
-        else if( (xstart-10) &gt; x){
+        else if( (xstart-10) &gt; x) {
+            image_xscale = 1;
             movedir = 1.0;
         }
+        else {
+            movedir = 0;
+        }
+        
     }
     else if(type == 1) {
         if( collision_rectangle(x,y, x+64,y, obj_tile_mockup, true, true) ) {
@@ -160,19 +189,27 @@ if(state == 0) {
             image_xscale = 1;
         }
     }
+    if(abs(x - obj_player.x) &lt; 600) {
+        state = 2;
+    }
     speed_modifier = 1.5;
     interacts = 0;
 }
 
 //Move towards player carefully.
 if(state == 1) {
+    if( (alarm[1] &lt;= 0 )) {
+        alarm[1] = room_speed * 10;
+    }
     if( obj_player.x &lt; x) {
         movedir = -1.0;
+        image_xscale = -1;
     }
     else {
         movedir = 1.0;
+        image_xscale = 1;
     }
-    if(abs(x - obj_player.x) &lt; 300) {
+    if(abs(x - obj_player.x) &lt; 600) {
         state = 2;
     }
     speed_modifier = 1.0;
@@ -181,6 +218,9 @@ if(state == 1) {
 
 //The enemy is surprised, and soon goes into attack mode
 if(state == 2) {
+    if( (alarm[1] &lt;= 0 )) {
+        alarm[1] = room_speed * 10;
+    }
     if( (alarm[0] &lt;= 0 )) {
         alarm[0] = room_speed * 2;
     }
@@ -189,8 +229,12 @@ if(state == 2) {
 }
 
 if(state == 3) {
+    if( (alarm[1] &lt;= 0 )) {
+        alarm[1] = room_speed * 10;
+    }
     nearest_alarm = instance_nearest(x,y,obj_alarm);
     if( (nearest_alarm.y &gt; y+224) || (nearest_alarm.y &lt; y-224) ) {
+        show_message("meep");
         state = 4;
     }
     else {
@@ -208,6 +252,9 @@ if(state == 3) {
 }
 
 if(state == 4) {
+    if( (alarm[1] &lt;= 0 )) {
+        alarm[1] = room_speed * 10;
+    }
     if( obj_player.x &lt; x) {
         movedir = -1.0;
         image_xscale = -1;

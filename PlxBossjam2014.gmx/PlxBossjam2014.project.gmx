@@ -109,8 +109,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_danzer_testroom</room>
+    <room>rooms\rm_level_mockup</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
