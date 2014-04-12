@@ -90,8 +90,11 @@
     <background>background\bg_mockup_one</background>
     <background>background\bg_tile</background>
     <background>background\bg_real_tileset</background>
+<<<<<<< HEAD
     <background>background\bg_sky</background>
     <background>background\bg_newspaper</background>
+=======
+>>>>>>> parent of 8064b82... Sky background
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
