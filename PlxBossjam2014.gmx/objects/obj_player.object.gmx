@@ -77,10 +77,10 @@ else if(input_movement_x() &gt; 0)  {
 x += input_movement_x() * speed_multiplier;
 
 //fade player
-if(image_alpha&gt;0){
+if(image_alpha&gt;0 &amp;&amp; PlayerHidden==true){
         image_alpha -= 0.02;
 }
-if(image_alpha&lt;1){
+if(image_alpha&lt;1 &amp;&amp; PlayerHidden==false){
         image_alpha += 0.02;
 }
 
