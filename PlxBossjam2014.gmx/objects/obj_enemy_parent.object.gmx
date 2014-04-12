@@ -99,7 +99,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = state - 1;
+            <string>/// Reduce state
+state = state - 1;
 </string>
           </argument>
         </arguments>

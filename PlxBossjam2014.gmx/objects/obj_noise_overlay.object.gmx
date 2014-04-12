@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Set alpha
-image_alpha = 0.2;
+image_alpha = 0.1;
 </string>
           </argument>
         </arguments>
@@ -50,8 +50,8 @@ image_alpha = 0.2;
           <argument>
             <kind>1</kind>
             <string>/// Draw noise overlay
-for (x=view_xview[0] - irandom(sprite_width); x&lt;view_wview[0]; x+=sprite_width) {
-    for (y=view_yview[0] - irandom(sprite_height); y&lt;view_hview[0]; y+=sprite_height) {
+for (x=view_xview[0] - irandom(sprite_width); x&lt;view_xview[0]+view_wview[0]; x+=sprite_width) {
+    for (y=view_yview[0] - irandom(sprite_height); y&lt;view_yview[0]+view_hview[0]; y+=sprite_height) {
         draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
     }
 }
