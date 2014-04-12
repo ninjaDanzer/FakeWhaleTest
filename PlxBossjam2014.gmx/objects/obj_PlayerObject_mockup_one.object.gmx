@@ -8,16 +8,16 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="9" enumb="39">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>101</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_move</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -25,26 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Cehck if the player crouches and modify movement speed
-var speed_multiplier;
-if(input_check(BUTTON_CROUCH)) {
-    speed_multiplier = 0.5;
-}
-else {
-    speed_multiplier = 1.0;
-}
-
-//flip sprite
-if( (input_movement_x() &lt; 0) ) {
-image_xscale = -1;
-}
-else if(input_movement_x() &gt; 0)  {
-image_xscale = 1;
-}
-
-//move player
-x += input_movement_x() * speed_multiplier;
-</string>
+            <string>000001000</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>3</string>
           </argument>
         </arguments>
       </action>
@@ -63,6 +48,6 @@ x += input_movement_x() * speed_multiplier;
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
     <point>0,0</point>
-    <point>60,60</point>
+    <point>16,16</point>
   </PhysicsShapePoints>
 </object>
