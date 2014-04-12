@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
+            <string>PlayerInteraction = !PlayerInteraction;
 image_speed=0.1;
 obj_player.x = endpoint_x;
 obj_player.y = endpoint_y;
