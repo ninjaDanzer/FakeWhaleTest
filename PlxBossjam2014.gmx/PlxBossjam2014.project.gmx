@@ -27,7 +27,9 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_tile_mockup</sprite>
+    <sprite>sprites\sp_player_croch_walk</sprite>
     <sprite>sprites\sp_player_mockup</sprite>
+    <sprite>sprites\sp_player_interact</sprite>
     <sprite>sprites\sp_tile_mockup_two</sprite>
     <sprite>sprites\sp_curtains_rev_one</sprite>
     <sprite>sprites\sp_enemy_mockup</sprite>

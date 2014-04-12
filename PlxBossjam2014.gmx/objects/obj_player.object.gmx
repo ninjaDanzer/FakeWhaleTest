@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Add global variable to tell if hiddel or not.
 PlayerHidden= false;
+PlayerInteracting=false;
 //audio_play_sound(snd_whale_walking_first, 100, true);
 audio_play_sound(snd_whale_walking_stone_second, 100, true);
 image_speed=0;
@@ -52,14 +53,18 @@ image_speed=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Check if the player crouches and modify movement speed
+            <string>//Check if the player crouches and modify movement speed + animation
 var speed_multiplier;
+
 if(input_check(BUTTON_CROUCH)) {
-    speed_multiplier = 90 / room_speed;
-}
+        speed_multiplier = 90 / room_speed;
+        sprite_index=sp_player_croch_walk;
+    
+        }
 else {
-    speed_multiplier = 180 / room_speed;;
-}
+    speed_multiplier = 180 / room_speed;
+    sprite_index=sp_player_mockup;
+        }
 
 //flip sprite
 if( (input_movement_x() &lt; 0) ) {
@@ -73,11 +78,11 @@ image_xscale = 1;
 x += input_movement_x() * speed_multiplier;
 
 //fade player
-if(image_alpha&gt;0 &amp;&amp; PlayerHidden==true){
-        image_alpha -= 0.01;
+if(image_alpha&gt;0){
+        image_alpha -= 0.02;
 }
-if(image_alpha&lt;1 &amp;&amp; PlayerHidden==false){
-        image_alpha += 0.01;
+if(image_alpha&lt;1){
+        image_alpha += 0.02;
 }
 
 //Switch stationary and moving + walking sound
@@ -90,7 +95,7 @@ else{
     //audio_resume_sound(snd_whale_walking_first);
     audio_resume_sound(snd_whale_walking_stone_second);
     image_speed=0.1;
-}
+    }
 
 // Temporary nosie test code
 if (input_check_pressed(BUTTON_ACTION)) {
