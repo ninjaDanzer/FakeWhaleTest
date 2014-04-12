@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Add global variable to tell if hiddel or not.
 PlayerHidden= false;
+//audio_play_sound(snd_whale_walking_first, 100, true);
 image_speed=0;
 </string>
           </argument>
@@ -78,11 +79,13 @@ if(image_alpha&lt;1 &amp;&amp; PlayerHidden==false){
         image_alpha += 0.01;
 }
 
-//Switch stationary and moving
+//Switch stationary and moving + walking sound
 if(input_movement_x()==0){
     image_speed=0;
+    //audio_pause_sound(snd_whale_walking_first);
 }
-else{
+else{ 
+    //audio_resume_sound(snd_whale_walking_first);
     image_speed=0.1;
 }
 
