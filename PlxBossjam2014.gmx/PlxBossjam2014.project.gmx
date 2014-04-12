@@ -142,6 +142,7 @@
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_enemy_guarding</object>
     </objects>
     <objects name="controllers">
       <object>objects\obj_init_controls</object>
