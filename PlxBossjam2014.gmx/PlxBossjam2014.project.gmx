@@ -84,10 +84,10 @@
       <script>scripts\add_button_code.gml</script>
     </scripts>
     <script>scripts\make_noise.gml</script>
-	<scripts name="Pausing">
-		<script>scripts\pause_game.gml</script>
-		<script>scripts\resume_game.gml</script>
-	</scripts>
+    <scripts name="Pausing">
+      <script>scripts\pause_game.gml</script>
+      <script>scripts\resume_game.gml</script>
+    </scripts>
     <script>scripts\change_slide.gml</script>
   </scripts>
   <shaders name="shaders">

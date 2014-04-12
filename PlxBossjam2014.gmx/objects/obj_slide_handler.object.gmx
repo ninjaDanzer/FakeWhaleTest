@@ -76,8 +76,10 @@
             <string>change_slide(-1.0, 0, sp_testslide, "Trouble was brewing in Korrekt city");
 slide_x = 0;
 slide_y = 0;
+fade_in = 1;
+fade_value = 0;
 
-alarm[0] = room_speed*15;
+alarm[0] = room_speed*6;
 </string>
           </argument>
         </arguments>
@@ -100,7 +102,7 @@ alarm[0] = room_speed*15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = room_speed*15;
+            <string>alarm[1] = room_speed*6;
 slide_x = 0;
 slide_y = 0;
 change_slide(0.5, 0, sp_testslide_2, "Corrupt politicians had killed his wife.");
@@ -135,7 +137,19 @@ change_slide(0.5, 0, sp_testslide_2, "Corrupt politicians had killed his wife.")
 slide_x += x_movement;
 slide_y += y_movement;
 
-
+if(fade_in == 1){
+    fade_value += 0.01;
+    if(fade_value &gt; 0.95){
+        fade_in = 0;
+    }
+}
+else
+{
+    fade_value -= 0.01;
+    if(fade_value &lt; 0.05){
+        fade_in = 1;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -158,7 +172,7 @@ slide_y += y_movement;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(slide_sprite,0, slide_x, slide_y);
+            <string>draw_sprite_ext(slide_sprite,0, slide_x, slide_y,1,1,0,c_white,fade_value   );
 draw_set_color(c_black);
 draw_rectangle(0,0,room_width, 256, false);
 draw_rectangle(0,room_height,room_width,room_height-256, false);
@@ -166,6 +180,7 @@ draw_set_font(fnt_monty)
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_text_transformed(960,room_height-128, display_text,2,2,0);
+draw_text(32,32, alarm[0]);
 </string>
           </argument>
         </arguments>
