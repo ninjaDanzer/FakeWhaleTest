@@ -90,6 +90,7 @@
     <background>background\bg_mockup_one</background>
     <background>background\bg_tile</background>
     <background>background\bg_real_tileset</background>
+    <background>background\bg_sky</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -167,7 +168,6 @@
     <room>rooms\rm_slide_testing</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
-    <room>rooms\rm_game_over</room>
     <rooms name="Game Levels">
       <room>rooms\Level_1</room>
     </rooms>
