@@ -185,13 +185,13 @@ if(state == 0) {
             movedir = -1.0;
             image_xscale = -1;
         }
-        else if( collision_rectangle(x,y, x-64,y, obj_tile_mockup, true, true) ) {
+        else if( place_free(x - 10, y) ) {
             movedir = 1.0;
             image_xscale = 1;
         }
     }
-    if(abs(x - obj_player.x) &lt; 600) {
-        state = 2;
+    if(abs(x - obj_player.x) &lt; 600 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden) {
+        state = 3;
     }
     speed_modifier = 1.5;
     interacts = 0;
