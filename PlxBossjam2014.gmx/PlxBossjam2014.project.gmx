@@ -46,11 +46,6 @@
     <object>objects\obj_interaction_parent</object>
     <object>objects\obj_interaction_test</object>
     <object>objects\obj_enemy_parent</object>
-    <objects name="Light">
-      <object>objects\obj_light_controller</object>
-      <object>objects\obj_static_light</object>
-      <object>objects\parent_light_block</object>
-    </objects>
     <object>objects\obj_enemy_guarding</object>
   </objects>
   <rooms name="rooms">
