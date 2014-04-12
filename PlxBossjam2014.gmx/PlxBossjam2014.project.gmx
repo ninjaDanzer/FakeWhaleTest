@@ -62,10 +62,12 @@
     </sprites>
     <sprite>sprites\sp_testslide</sprite>
     <sprite>sprites\sp_testslide_2</sprite>
+    <sprite>sprites\obj_collision</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
     <background>background\bg_mockup_one</background>
+    <background>background\bg_tile</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -133,6 +135,7 @@
       <object>objects\obj_pause</object>
       <object>objects\obj_slide_handler</object>
     </objects>
+    <object>objects\obj_collision_block</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_slide_testing</room>

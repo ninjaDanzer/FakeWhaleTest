@@ -180,7 +180,7 @@ if(state == 0) {
         
     }
     else if(type == 1) {
-        if( collision_rectangle(x,y, x+64,y, obj_tile_mockup, true, true) ) {
+        if( place_free(x + 10, y) ) {
             movedir = -1.0;
             image_xscale = -1;
         }
