@@ -23,14 +23,4 @@ if (gamepad_is_supported()) {
     }
 }
 
-// Joystick
-var i;
-for (i=1; i<2; i++) {
-    if (joystick_exists(i)) {
-        var axis_x = joystick_xpos(i);
-        if (abs(axis_x) > 0.2)
-            return axis_x;
-    }
-}
-
 return 0;

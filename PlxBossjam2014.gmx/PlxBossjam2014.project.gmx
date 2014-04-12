@@ -74,16 +74,19 @@
     </sprites>
     <sprite>sprites\sp_testslide</sprite>
     <sprite>sprites\sp_testslide_2</sprite>
+    <sprite>sprites\obj_collision</sprite>
+    <sprite>sprites\sr_rgb_noise</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
     <background>background\bg_mockup_one</background>
+    <background>background\bg_tile</background>
+    <background>background\bg_real_tileset</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Input">
       <script>scripts\input_setup.gml</script>
-      <script>scripts\input_update.gml</script>
       <script>scripts\input_check.gml</script>
       <script>scripts\input_check_pressed.gml</script>
       <script>scripts\input_check_released.gml</script>
@@ -147,6 +150,8 @@
       <object>objects\obj_pause</object>
       <object>objects\obj_slide_handler</object>
     </objects>
+    <object>objects\obj_collision_block</object>
+    <object>objects\obj_noise_overlay</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level_mockup</room>
@@ -154,6 +159,9 @@
     <room>rooms\rm_danzer_testroom</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
+    <rooms name="Game Levels">
+      <room>rooms\Level_1</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -28,6 +28,7 @@
             <string>/// Initialize controls etc.
 instance_create(0, 0, obj_init_controls);
 instance_create(0, 0, obj_message_controller);
+instance_create(0, 0, obj_noise_overlay);
 
 global.screen_surface = surface_create(1920, 1080);
 global.just_resumed = false;
@@ -83,6 +84,8 @@ if (global.just_resumed) {
     room_persistent = global.pause_room_persistent;
     global.just_resumed = false;
 }
+
+global.alarm_on = false;
 </string>
           </argument>
         </arguments>
@@ -107,6 +110,8 @@ if (global.just_resumed) {
             <kind>1</kind>
             <string>/// Draw view surface
 draw_surface(global.screen_surface, 0, 0);
+
+draw_text(20, 20, string(fps));
 </string>
           </argument>
         </arguments>

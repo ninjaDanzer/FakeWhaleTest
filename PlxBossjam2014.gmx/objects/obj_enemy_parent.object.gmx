@@ -99,7 +99,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = state - 1;
+            <string>/// Reduce state
+state = state - 1;
 </string>
           </argument>
         </arguments>
@@ -180,7 +181,7 @@ if(state == 0) {
         
     }
     else if(type == 1) {
-        if( collision_rectangle(x,y, x+64,y, obj_tile_mockup, true, true) ) {
+        if( place_free(x + 10, y) ) {
             movedir = -1.0;
             image_xscale = -1;
         }
@@ -234,7 +235,7 @@ if(state == 3) {
         alarm[1] = room_speed * 10;
     }
     nearest_alarm = instance_nearest(x,y,obj_alarm);
-    if( ( (nearest_alarm.y &gt; y+224) || (nearest_alarm.y &lt; y-224) ) &amp;&amp; global.alarm_on == 1 ) {
+    if( nearest_alarm and ( (nearest_alarm.y &gt; y+224) || (nearest_alarm.y &lt; y-224) ) &amp;&amp; global.alarm_on == 1 ) {
         state = 4;
     }
     else {
