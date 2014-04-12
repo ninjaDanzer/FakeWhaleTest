@@ -29,10 +29,7 @@
 PlayerInteraction=false;
 Busy=false;
 image_speed=0.1;
-state_idle=1;
-state_closing=2;
-state_closed=3;
-state_opening=4;
+
 </string>
           </argument>
         </arguments>
