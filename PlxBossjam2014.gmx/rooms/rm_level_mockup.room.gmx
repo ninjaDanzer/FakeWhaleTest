@@ -52,7 +52,7 @@
   <instances>
     <instance objName="obj_init_everything" x="96" y="96" name="inst_81BC9377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="150" y="1936" name="inst_D723D01A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_guarding" x="650" y="1936" name="inst_9DE43030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_guarding" x="640" y="1792" name="inst_9DE43030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="239" y="1601" name="inst_028B6767" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
