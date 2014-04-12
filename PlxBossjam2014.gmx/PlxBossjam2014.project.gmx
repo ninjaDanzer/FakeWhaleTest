@@ -68,6 +68,7 @@
     <background>background\bg_primary_mockup</background>
     <background>background\bg_mockup_one</background>
     <background>background\bg_tile</background>
+    <background>background\bg_real_tileset</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
