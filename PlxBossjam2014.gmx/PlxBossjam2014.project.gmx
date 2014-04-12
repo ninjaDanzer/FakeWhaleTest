@@ -60,11 +60,9 @@
     <object>objects\obj_interaction_test</object>
     <object>objects\obj_enemy_parent</object>
     <objects name="Elevator">
-      <object>objects\obj_elevator_doors</object>
       <object>objects\obj_elevator_back</object>
     </objects>
     <objects name="Wardrobe">
-      <object>objects\obj_wardrobe_doors</object>
       <object>objects\obj_wardrobe_back</object>
     </objects>
     <object>objects\obj_enemy_guarding</object>
