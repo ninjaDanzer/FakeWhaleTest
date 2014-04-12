@@ -11,6 +11,10 @@
     <sound>sound\snd_whale_theme_song</sound>
     <sound>sound\snd_whale_walking_first</sound>
     <sound>sound\snd_whale_walking_stone_second</sound>
+    <sound>sound\snd_whale_slap</sound>
+    <sound>sound\snd_whale_ventilation</sound>
+    <sound>sound\snd_whale_climb_ventilation</sound>
+    <sound>sound\sound6</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_tile_mockup</sprite>
