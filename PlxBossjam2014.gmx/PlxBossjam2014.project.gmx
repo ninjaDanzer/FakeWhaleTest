@@ -26,6 +26,11 @@
       <script>scripts\input_movement_x.gml</script>
     </scripts>
   </scripts>
+  <shaders name="shaders"/>
+  <fonts name="fonts">
+    <font>fonts\fnt_betty_noir</font>
+    <font>fonts\fnt_monty</font>
+  </fonts>
   <objects name="objects">
     <object>objects\PlayerObject</object>
     <object>objects\obj_tile_mockup</object>
