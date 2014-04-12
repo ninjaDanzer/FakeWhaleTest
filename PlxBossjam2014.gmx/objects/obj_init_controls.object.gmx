@@ -82,10 +82,6 @@ if (input_check_pressed(BUTTON_CROUCH)) {
     }
     message_push("Press fish to fish fish whale fish. Mammal.");
 }
-
-if (input_check_pressed(BUTTON_ACTION)) {
-    make_noise(x, y, 300);
-}
 </string>
           </argument>
         </arguments>
