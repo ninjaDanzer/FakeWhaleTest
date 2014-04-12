@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
+            <string>/// Init lighting engine.
+
+randomize();
 /*
 This is where things start. ls_system_properties sets up the engine.
 You can toggle the whole system on and off with this function, as well
@@ -117,7 +119,8 @@ shadowcaps = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>/// Update light properties.
+/*
 Updating light properties is as simple as calling the correct function
 and passing the light ID to it.
 */
@@ -144,7 +147,8 @@ ls_light_set_pos(mouselight, mouse_x, mouse_y);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>/// Render light engine.
+/*
 This function actually draws the system on the screen.
 The first argument determines if you want the system to update or not,
 and the second will toggle debug mode.
