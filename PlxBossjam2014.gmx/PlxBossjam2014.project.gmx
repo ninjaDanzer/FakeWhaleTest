@@ -32,6 +32,9 @@
       <script>scripts\input_check_released.gml</script>
       <script>scripts\input_movement_x.gml</script>
     </scripts>
+    <scripts name="Messages">
+      <script>scripts\message_init.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_betty_noir</font>
@@ -50,6 +53,11 @@
     <object>objects\obj_enemy_parent</object>
     <object>objects\obj_enemy_guarding</object>
     <object>objects\obj_init_everything</object>
+    <objects name="Light">
+      <object>objects\obj_light_controller</object>
+      <object>objects\obj_static_light</object>
+      <object>objects\parent_light_block</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_danzer_testroom</room>
