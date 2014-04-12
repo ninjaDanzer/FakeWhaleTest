@@ -14,7 +14,16 @@
     <sound>sound\snd_whale_slap</sound>
     <sound>sound\snd_whale_ventilation</sound>
     <sound>sound\snd_whale_climb_ventilation</sound>
-    <sound>sound\sound6</sound>
+    <sound>sound\snd_door_open</sound>
+    <sound>sound\snd_elevator_button_press</sound>
+    <sound>sound\snd_elevator_ride</sound>
+    <sound>sound\snd_elevator_arrive</sound>
+    <sound>sound\snd_crowd_applause</sound>
+    <sound>sound\snd_whale_ventilation_impact</sound>
+    <sound>sound\snd_XXXXX_detection</sound>
+    <sound>sound\snd_wardrobe_open_close</sound>
+    <sound>sound\snd_guard_suspicious</sound>
+    <sound>sound\snd_boss_no_chance</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_tile_mockup</sprite>
@@ -107,9 +116,6 @@
       <object>objects\obj_PlayerObject_mockup_one</object>
       <object>objects\obj_player</object>
       <object>objects\obj_enemy_mockup</object>
-      <object>objects\obj_test_input</object>
-      <object>objects\obj_tile_mockup</object>
-      <object>objects\obj_interaction_test</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy_guarding</object>
@@ -124,8 +130,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_level_mockup</room>
+    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
     <room>rooms\rm_slide_testing</room>
