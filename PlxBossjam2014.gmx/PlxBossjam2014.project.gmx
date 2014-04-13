@@ -204,8 +204,8 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Game Levels">
-      <room>rooms\rm_intro_slides</room>
       <room>rooms\Level_1</room>
+      <room>rooms\rm_intro_slides</room>
       <room>rooms\Intermission_1</room>
       <room>rooms\Intermission_2</room>
       <room>rooms\Level_2</room>

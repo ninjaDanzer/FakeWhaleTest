@@ -8,7 +8,7 @@
   <parentName>obj_enemy_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -26,12 +26,38 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited();
-if(distance_to_object(obj_player)&lt;=25 &amp;&amp; obj_player.PlayerSlapping){
-    image_speed=0.05;
-    sprite_index=sp_guard_die;
-    GuardLife=false;
-}
-if(!GuardLife){
+GuardLife = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (GuardLife) {    
+    event_inherited();
+    
+    if(distance_to_object(obj_player)&lt;=25 &amp;&amp; obj_player.PlayerSlapping){
+        image_speed=0.05;
+        sprite_index=sp_guard_die;
+        GuardLife=false;
+    }
+} else {
     sprite_index=sp_guard_dead;
 }
 </string>
