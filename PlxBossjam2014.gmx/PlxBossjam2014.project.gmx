@@ -166,8 +166,8 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Game Levels">
-      <room>rooms\Intermission_1</room>
       <room>rooms\Level_1</room>
+      <room>rooms\Intermission_1</room>
     </rooms>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_danzer_testroom</room>

@@ -11,7 +11,7 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code></code>
-  <enableViews>0</enableViews>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
     <isSet>0</isSet>
@@ -40,7 +40,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_player" xview="0" yview="0" wview="1920" hview="1080" xport="0" yport="0" wport="1920" hport="1080" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -50,8 +50,13 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="obj_init_everything" x="768" y="3712" name="inst_1BFC34AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="1969" y="4033" name="inst_C9D4EF51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="1457" y="3072" name="inst_A59C50FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="946" y="3072" name="inst_A59C50FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_elevator_door" x="192" y="4032" name="inst_6C1863B6" locked="0" code="endpoint_x = 320;&#xA;endpoint_y = 3520;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_elevator_door" x="1344" y="3584" name="inst_41BFAB02" locked="0" code="endpoint_x = 1472&#xA;endpoint_y = 2560" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_elevator_door" x="192" y="3584" name="inst_72149799" locked="0" code="endpoint_x = 320;&#xA;endpoint_y = 3968;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_elevator_door" x="1344" y="2624" name="inst_5C5DFE16" locked="0" code="endpoint_x = 1472;&#xA;endpoint_y = 3520;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="1897" y="4023" name="inst_E94A8C06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
@@ -79,7 +84,6 @@
     <tile bgName="bg_real_tileset" x="960" y="3840" w="128" h="192" xo="0" yo="64" id="10000052" name="inst_BCED6961" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1088" y="3840" w="64" h="192" xo="64" yo="256" id="10000053" name="inst_9F194250" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1088" y="4032" w="64" h="64" xo="0" yo="0" id="10000054" name="inst_D9FCCB3E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="1152" y="3648" w="256" h="384" xo="256" yo="0" id="10000056" name="inst_C4123D00" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1152" y="4032" w="64" h="64" xo="0" yo="0" id="10000057" name="inst_70A98C17" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1216" y="4032" w="64" h="64" xo="0" yo="0" id="10000058" name="inst_8DB6BA5E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1280" y="4032" w="64" h="64" xo="0" yo="0" id="10000059" name="inst_F7B2057E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -111,7 +115,6 @@
     <tile bgName="bg_real_tileset" x="1472" y="3840" w="64" h="64" xo="192" yo="0" id="10000085" name="inst_A2941CD0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1472" y="3904" w="64" h="64" xo="192" yo="0" id="10000086" name="inst_C24C0F6E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1472" y="3968" w="64" h="64" xo="192" yo="0" id="10000087" name="inst_A7F4DEA9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="1536" y="3648" w="256" h="384" xo="256" yo="0" id="10000089" name="inst_AEE08F93" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1664" y="4032" w="64" h="64" xo="0" yo="0" id="10000090" name="inst_A13942F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1728" y="4032" w="64" h="64" xo="0" yo="0" id="10000091" name="inst_BD418967" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1792" y="4032" w="64" h="64" xo="0" yo="0" id="10000092" name="inst_CB42B55D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -228,7 +231,6 @@
     <tile bgName="bg_real_tileset" x="0" y="3392" w="64" h="64" xo="0" yo="0" id="10000230" name="inst_349B32EE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="0" y="3328" w="64" h="64" xo="0" yo="0" id="10000231" name="inst_B7D2253A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="0" y="3264" w="64" h="64" xo="0" yo="0" id="10000232" name="inst_9F839783" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="64" y="3136" w="256" h="448" xo="256" yo="0" id="10000233" name="inst_D1F35BFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="320" y="3456" w="64" h="64" xo="0" yo="320" id="10000257" name="inst_3B984E34" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="320" y="3520" w="64" h="64" xo="0" yo="384" id="10000258" name="inst_E6664029" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="384" y="3392" w="64" h="64" xo="192" yo="128" id="10000260" name="inst_61B9A5A6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -297,7 +299,6 @@
     <tile bgName="bg_real_tileset" x="1024" y="3136" w="64" h="64" xo="192" yo="0" id="10000327" name="inst_CECD6438" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="0" y="3200" w="64" h="64" xo="0" yo="0" id="10000328" name="inst_40A41719" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="0" y="3136" w="64" h="64" xo="0" yo="0" id="10000329" name="inst_91F05564" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="1728" y="3136" w="256" h="448" xo="256" yo="0" id="10000330" name="inst_667BB89B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1984" y="3520" w="64" h="64" xo="0" yo="0" id="10000331" name="inst_E538E8D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1984" y="3456" w="64" h="64" xo="0" yo="0" id="10000332" name="inst_7BFF846C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1984" y="3392" w="64" h="64" xo="0" yo="0" id="10000333" name="inst_418483E0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -396,10 +397,6 @@
     <tile bgName="bg_real_tileset" x="0" y="2880" w="64" h="64" xo="0" yo="0" id="10000426" name="inst_DCDC265F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="0" y="2816" w="64" h="64" xo="0" yo="0" id="10000427" name="inst_A83C914F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="0" y="2752" w="64" h="64" xo="0" yo="0" id="10000428" name="inst_EE9F8C69" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="64" y="2816" w="256" h="256" xo="512" yo="0" id="10000429" name="inst_CC380712" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="576" y="2816" w="256" h="256" xo="512" yo="0" id="10000430" name="inst_0E847DDA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="1088" y="2816" w="256" h="256" xo="512" yo="0" id="10000431" name="inst_95550177" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="1600" y="2816" w="256" h="256" xo="512" yo="0" id="10000432" name="inst_497D64A8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="320" y="2880" w="64" h="192" xo="0" yo="256" id="10000434" name="inst_1FF961BD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="832" y="2880" w="64" h="192" xo="0" yo="256" id="10000435" name="inst_10FAF995" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1344" y="2880" w="64" h="192" xo="0" yo="256" id="10000436" name="inst_9AD82527" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -462,7 +459,6 @@
     <tile bgName="bg_real_tileset" x="1472" y="2880" w="64" h="64" xo="192" yo="0" id="10000500" name="inst_F61310D7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1472" y="2944" w="64" h="64" xo="192" yo="0" id="10000501" name="inst_D5733419" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1472" y="3008" w="64" h="64" xo="192" yo="0" id="10000502" name="inst_EBD15CFA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="1472" y="2688" w="64" h="64" xo="64" yo="0" id="10000503" name="inst_F3E14069" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1472" y="2624" w="64" h="64" xo="0" yo="0" id="10000504" name="inst_47F22DCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1408" y="2624" w="64" h="64" xo="0" yo="0" id="10000505" name="inst_5D224519" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1344" y="2624" w="64" h="64" xo="0" yo="0" id="10000506" name="inst_06FF19B7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -516,12 +512,9 @@
     <tile bgName="bg_real_tileset" x="768" y="2688" w="64" h="64" xo="192" yo="0" id="10000554" name="inst_A3EAD9B4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="832" y="2688" w="64" h="64" xo="192" yo="0" id="10000555" name="inst_F0F9CD84" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="896" y="2688" w="64" h="64" xo="192" yo="0" id="10000556" name="inst_A49D612D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="960" y="2688" w="64" h="64" xo="192" yo="0" id="10000557" name="inst_673E2D42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1024" y="2688" w="64" h="64" xo="192" yo="0" id="10000558" name="inst_6DD3D9F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1088" y="2688" w="64" h="64" xo="192" yo="0" id="10000559" name="inst_91C77FD1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1152" y="2688" w="64" h="64" xo="192" yo="0" id="10000560" name="inst_311F1B76" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="1216" y="2688" w="64" h="64" xo="192" yo="0" id="10000561" name="inst_DC222694" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_real_tileset" x="1344" y="2688" w="64" h="64" xo="192" yo="0" id="10000562" name="inst_56AD891E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1280" y="2688" w="64" h="64" xo="192" yo="0" id="10000563" name="inst_E311C18D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1408" y="2688" w="64" h="64" xo="192" yo="0" id="10000564" name="inst_3CFA1E43" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1536" y="2688" w="64" h="64" xo="192" yo="0" id="10000565" name="inst_2C5014D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -531,6 +524,18 @@
     <tile bgName="bg_real_tileset" x="1792" y="2688" w="64" h="64" xo="192" yo="0" id="10000569" name="inst_CA8FC7FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1856" y="2688" w="64" h="64" xo="192" yo="0" id="10000570" name="inst_6BED6637" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_real_tileset" x="1920" y="2688" w="64" h="64" xo="192" yo="0" id="10000571" name="inst_D950910C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="1216" y="2688" w="64" h="64" xo="192" yo="0" id="10000573" name="inst_7A9FDB76" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="1344" y="2688" w="64" h="64" xo="192" yo="0" id="10000574" name="inst_004340DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="1472" y="2688" w="64" h="64" xo="192" yo="0" id="10000575" name="inst_E86E947C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="960" y="2688" w="64" h="64" xo="64" yo="0" id="10000576" name="inst_AE1596EC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="64" y="2816" w="256" h="256" xo="768" yo="0" id="10000578" name="inst_F4C0F9EA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="1088" y="2816" w="256" h="256" xo="768" yo="0" id="10000579" name="inst_452772DA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="1600" y="2816" w="256" h="256" xo="768" yo="0" id="10000580" name="inst_A832325B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="576" y="2816" w="256" h="256" xo="768" yo="0" id="10000581" name="inst_B151A44E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="1152" y="3648" w="256" h="384" xo="1024" yo="0" id="10000583" name="inst_F2F27424" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="1536" y="3648" w="256" h="384" xo="1024" yo="0" id="10000584" name="inst_2AFAD6CE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="64" y="3136" w="256" h="448" xo="1024" yo="0" id="10000587" name="inst_CDAF2F2D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_real_tileset" x="1728" y="3136" w="256" h="448" xo="1024" yo="0" id="10000588" name="inst_3D2CF37B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
