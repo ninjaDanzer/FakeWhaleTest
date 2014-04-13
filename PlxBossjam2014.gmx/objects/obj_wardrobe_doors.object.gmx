@@ -53,6 +53,7 @@ image_speed=0;
             <kind>1</kind>
             <string>PlayerInteraction = !PlayerInteraction;
 image_speed=0.1;
+obj_player.PlayerHidden = 1;
 </string>
           </argument>
         </arguments>
