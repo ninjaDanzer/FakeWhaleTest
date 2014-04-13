@@ -92,6 +92,8 @@
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\sp_politician_fat</sprite>
     <sprite>sprites\sp_drawer_front</sprite>
+    <sprite>sprites\sp_painting_one</sprite>
+    <sprite>sprites\sp_painting_two</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -176,6 +178,9 @@
     </objects>
     <object>objects\obj_collision_block</object>
     <object>objects\obj_noise_overlay</object>
+    <object>objects\obj_painting_one</object>
+    <object>objects\obj_painting_two</object>
+    <object>objects\obj_politician_fat</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level_mockup</room>
