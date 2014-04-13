@@ -80,9 +80,6 @@ else if(input_movement_x() &gt; 0)  {
     image_xscale = 1;
 }
 
-//move player
-x += input_movement_x() * speed_multiplier;
-
 //fade player
 if(image_alpha&gt;0 &amp;&amp; PlayerHidden){
         image_alpha -= 0.02;
@@ -93,15 +90,22 @@ if(image_alpha&lt;1 &amp;&amp; !PlayerHidden){
 
 //Switch stationary and moving + walking sound
 if(PlayerSlapping==false){
-if(input_movement_x()==0){
-    image_speed=0;
-    audio_pause_sound(snd_whale_walking_stone_second);
-    //audio_pause_sound(snd_whale_walking_first);
-}
-else{ 
-    //audio_resume_sound(snd_whale_walking_first);
-    audio_resume_sound(snd_whale_walking_stone_second);
-    image_speed=0.1;
+    if(input_movement_x()==0 or PlayerHidden){
+        image_speed=0;
+        audio_pause_sound(snd_whale_walking_stone_second);
+        //audio_pause_sound(snd_whale_walking_first);
+    }
+    else{ 
+        //audio_resume_sound(snd_whale_walking_first);
+        audio_resume_sound(snd_whale_walking_stone_second);
+        image_speed=0.1;
+        
+        //move player
+        x += input_movement_x() * speed_multiplier;
+        
+        if (!input_check(BUTTON_CROUCH)) {
+            make_noise(x, y, 300);
+        }
     }
 } else image_speed=0.1;
 // Temporary nosie test code
