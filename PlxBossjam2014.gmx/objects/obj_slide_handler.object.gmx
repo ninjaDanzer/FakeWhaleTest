@@ -183,7 +183,6 @@ draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text_ext(room_width/2, room_height-64, global.slide_display_text[slide], -1, room_width - 200);
-draw_text(32,32, alarm[0]);
 draw_set_color(c_black);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
