@@ -25,7 +25,77 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0.05
+            <string>image_speed = 0.05;
+blood_size = 0;
+slapped = 0;
+bleeding = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(obj_player)&lt;=25 &amp;&amp; obj_player.PlayerSlapping){
+    if(slapped == 0){
+        audio_play_sound(snd_XXXXX_detection, 1, false);
+    }
+    alarm[0] = room_speed*2;
+    slapped = 1;
+    image_speed = 0;
+}
+
+if(image_angle &lt; 90 &amp;&amp; slapped){
+    image_angle+=10;
+}
+if(image_angle == 90){
+    bleeding = 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(bleeding){
+draw_set_color(c_red);
+blood_size += 0.1;
+draw_ellipse(x+blood_size-240,y+blood_size+25,x-blood_size-256,y-blood_size+25, false);
+
+draw_set_color(c_black);
+}
+draw_self();
 </string>
           </argument>
         </arguments>
