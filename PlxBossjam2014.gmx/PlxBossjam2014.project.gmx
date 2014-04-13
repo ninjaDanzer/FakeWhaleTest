@@ -182,6 +182,7 @@
       <room>rooms\Level_1</room>
       <room>rooms\Intermission_1</room>
       <room>rooms\Intermission_2</room>
+      <room>rooms\Level_2</room>
     </rooms>
     <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_slide_testing</room>
