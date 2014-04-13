@@ -62,6 +62,31 @@
     <instance objName="obj_wardrobe_back" x="1096" y="2024" name="inst_3E3DE1D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wardrobe_back" x="456" y="2024" name="inst_54B1BFCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elevator_back" x="1677" y="1949" name="inst_8481B470" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="192" y="512" name="inst_E2C4B4D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="704" y="576" name="inst_1DCABFF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="1344" y="576" name="inst_F343FFF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="256" y="1024" name="inst_9B2BC5B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="704" y="1024" name="inst_17C2B132" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="1024" y="960" name="inst_A0B92AE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="1472" y="1024" name="inst_1935638E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="1600" y="1664" name="inst_9839F21F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="832" y="1728" name="inst_A12B49BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="256" y="1664" name="inst_FA41DABC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="1600" y="2432" name="inst_BF86C897" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="1088" y="2432" name="inst_729E36F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="384" y="2496" name="inst_0E7E5050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="1664" y="3072" name="inst_5E74A575" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="896" y="3008" name="inst_6A6D13DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="320" y="3072" name="inst_2055E3DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="1728" y="3712" name="inst_55EFBF3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="896" y="3648" name="inst_F674A344" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ambient_light" x="256" y="3648" name="inst_17593009" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_window_light" x="1472" y="3584" name="inst_AC4CA37F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_round_window_light" x="256" y="1984" name="inst_7E648D6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_round_window_light" x="576" y="1984" name="inst_AFF0C581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_round_window_light" x="896" y="1984" name="inst_AD5A8735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_round_window_light" x="1216" y="1984" name="inst_C3CCA39E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_round_window_light" x="1536" y="1984" name="inst_7E5DE24E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_drawer" x="384" y="4032" name="inst_BFF54787" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wardrobe_doors" x="832" y="4032" name="inst_C4F2A816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elevator_door" x="1649" y="4030" name="inst_8E324F28" locked="0" code="endpoint_x = 1728;&#xA;endpoint_y = 3520;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -74,10 +99,6 @@
     <instance objName="obj_wardrobe_doors" x="1216" y="2304" name="inst_90B5E0EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wardrobe_doors" x="576" y="2304" name="inst_F103E828" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elevator_door" x="1648" y="2302" name="inst_850EEF57" locked="0" code="endpoint_x = 1728;&#xA;endpoint_y = 1600;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_guarding" x="1536" y="4032" name="inst_ACD340BA" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_guarding" x="544" y="3520" name="inst_089A9687" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_guarding" x="544" y="2944" name="inst_FF692E37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_guarding" x="672" y="2944" name="inst_3F28086D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ventilation_shaft" x="1600" y="3520" name="inst_C587A08A" locked="0" code="endpoint_x = 1536;&#xA;endpoint_y = 3520;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ventilation_shaft" x="128" y="3520" name="inst_D81C640F" locked="0" code="endpoint_x = 128;&#xA;endpoint_y = 3520;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ventilation_shaft" x="1344" y="3520" name="inst_A9A24C5E" locked="0" code="endpoint_x = 1280;&#xA;endpoint_y = 3520;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -92,7 +113,12 @@
     <instance objName="obj_animation_curtains" x="832" y="1600" name="inst_68882BF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="1152" y="1600" name="inst_B881EF4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="1472" y="1600" name="inst_3541CCB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_guarding" x="1536" y="4032" name="inst_ACD340BA" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_guarding" x="544" y="3520" name="inst_089A9687" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_guarding" x="544" y="2944" name="inst_FF692E37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_guarding" x="672" y="2944" name="inst_3F28086D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="192" y="4032" name="inst_BC39D00C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_light_controller" x="128" y="320" name="inst_4F93CC07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_real_tileset" x="0" y="4032" w="64" h="64" xo="0" yo="0" id="10002162" name="inst_BDD6EA4C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
