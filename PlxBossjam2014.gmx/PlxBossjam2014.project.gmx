@@ -102,6 +102,8 @@
       <sprite>sprites\spr_slide5</sprite>
       <sprite>sprites\spr_slide6</sprite>
     </sprites>
+    <sprite>sprites\sp_murica_flag</sprite>
+    <sprite>sprites\sp_murica_flag_dual</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -194,8 +196,8 @@
     <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_level_mockup</room>
     <rooms name="Game Levels">
-      <room>rooms\rm_intro_slides</room>
       <room>rooms\Level_1</room>
+      <room>rooms\rm_intro_slides</room>
       <room>rooms\Intermission_1</room>
       <room>rooms\Intermission_2</room>
       <room>rooms\Level_2</room>
