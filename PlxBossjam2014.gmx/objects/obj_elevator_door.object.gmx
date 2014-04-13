@@ -76,6 +76,8 @@ image_speed=0;
 image_speed=0.1;
 obj_player.x = endpoint_x;
 obj_player.y = endpoint_y;
+
+obj_player.PlayerHidden = !obj_player.PlayerHidden
 </string>
           </argument>
         </arguments>
