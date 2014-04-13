@@ -84,6 +84,9 @@
     <sprite>sprites\obj_collision</sprite>
     <sprite>sprites\sr_rgb_noise</sprite>
     <sprite>sprites\sp_newspaper</sprite>
+    <sprite>sprites\sp_drawer</sprite>
+    <sprite>sprites\sp_ceiling_lamp</sprite>
+    <sprite>sprites\sp_table_lamp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
