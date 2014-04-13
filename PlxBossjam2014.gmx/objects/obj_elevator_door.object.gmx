@@ -51,7 +51,7 @@ image_speed=0;
           <argument>
             <kind>1</kind>
             <string>PlayerInteraction = !PlayerInteraction;
-audio_play_sound(snd_elevator_button_press,100,false);
+audio_play_sound(snd_elevator_button_press,1,false);
 image_speed=0.1;
 obj_player.x = endpoint_x;
 obj_player.y = endpoint_y;
@@ -79,7 +79,8 @@ obj_player.PlayerHidden = !obj_player.PlayerHidden
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed =0;
+            <string>audio_play_sound(snd_elevator_arrive,1,false);
+image_speed =0;
 </string>
           </argument>
         </arguments>
