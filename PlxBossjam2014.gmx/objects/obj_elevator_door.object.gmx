@@ -79,7 +79,8 @@ obj_player.PlayerHidden = !obj_player.PlayerHidden
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed =0;
+            <string>audio_play_sound(snd_elevator_arrive,1,false);
+image_speed =0;
 </string>
           </argument>
         </arguments>
