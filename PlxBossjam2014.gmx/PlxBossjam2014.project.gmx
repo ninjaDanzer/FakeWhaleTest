@@ -44,6 +44,7 @@
     <sprite>sprites\sp_tile_mockup</sprite>
     <sprite>sprites\sp_player_croch_walk</sprite>
     <sprite>sprites\sp_player_mockup</sprite>
+    <sprite>sprites\mask_player</sprite>
     <sprite>sprites\sp_player_slap</sprite>
     <sprite>sprites\sp_player_interact</sprite>
     <sprite>sprites\sp_tile_mockup_two</sprite>
@@ -94,7 +95,7 @@
     </sprites>
     <sprite>sprites\sp_testslide</sprite>
     <sprite>sprites\sp_testslide_2</sprite>
-    <sprite>sprites\obj_collision</sprite>
+    <sprite>sprites\spr_collision</sprite>
     <sprite>sprites\sr_rgb_noise</sprite>
     <sprite>sprites\sp_newspaper</sprite>
     <sprite>sprites\sp_ceiling_lamp</sprite>
@@ -114,6 +115,7 @@
     </sprites>
     <sprite>sprites\sp_murica_flag</sprite>
     <sprite>sprites\sp_murica_flag_dual</sprite>
+    <sprite>sprites\sp_winscreen</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -202,6 +204,7 @@
     <object>objects\obj_painting_one</object>
     <object>objects\obj_painting_two</object>
     <object>objects\obj_politician_fat</object>
+    <object>objects\obj_winscreen</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_danzer_testroom</room>
@@ -217,6 +220,7 @@
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
     <room>rooms\rm_game_over</room>
+    <room>rooms\rm_winscreen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
