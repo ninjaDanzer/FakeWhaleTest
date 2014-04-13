@@ -350,7 +350,9 @@
     <option_writeerrors>False</option_writeerrors>
   </Options>
   <ConfigConstants>
-    <constants number="4">
+    <constants number="6">
+      <constant name="c_dkdkgray">make_color_rgb(44, 44, 44)</constant>
+      <constant name="c_ltblue">make_color_rgb(132, 220, 225)</constant>
       <constant name="BUTTON_SLAP">3</constant>
       <constant name="BUTTON_PAUSE">2</constant>
       <constant name="BUTTON_CROUCH">1</constant>
