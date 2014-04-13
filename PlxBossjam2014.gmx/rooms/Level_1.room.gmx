@@ -57,6 +57,11 @@
     <instance objName="obj_init_everything" x="768" y="3712" name="inst_1BFC34AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_painting_two" x="388" y="2322" name="inst_D3396258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_politician_fat" x="448" y="1152" name="inst_BD192DE4" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_block" x="0" y="3968" name="inst_4914AB50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_block" x="0" y="3904" name="inst_E3713F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_block" x="0" y="3840" name="inst_1123BB41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_block" x="0" y="3776" name="inst_8337CD50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_block" x="0" y="3712" name="inst_B4108CC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="832" y="3584" name="inst_4DC733C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="1856" y="3584" name="inst_CB90A786" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="832" y="2624" name="inst_AC26FF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
