@@ -60,6 +60,7 @@ else if(PlayerInteraction==true &amp;&amp; Busy==false){
     sprite_index=sp_curtains_closing;
 }
 Busy=true;
+obj_player.PlayerHidden = !obj_player.PlayerHidden
 </string>
           </argument>
         </arguments>

@@ -53,8 +53,10 @@ image_speed=0;
             <string>PlayerInteraction = !PlayerInteraction;
 audio_play_sound(snd_elevator_button_press,1,false);
 image_speed=0.1;
-//obj_player.x = endpoint_x;
-//obj_player.y = endpoint_y;
+obj_player.x = endpoint_x;
+obj_player.y = endpoint_y;
+
+obj_player.PlayerHidden = !obj_player.PlayerHidden
 </string>
           </argument>
         </arguments>

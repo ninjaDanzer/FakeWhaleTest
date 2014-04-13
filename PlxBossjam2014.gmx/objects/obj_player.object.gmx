@@ -84,10 +84,10 @@ else if(input_movement_x() &gt; 0)  {
 x += input_movement_x() * speed_multiplier;
 
 //fade player
-if(image_alpha&gt;0 &amp;&amp; PlayerHidden==true){
+if(image_alpha&gt;0 &amp;&amp; PlayerHidden){
         image_alpha -= 0.02;
 }
-if(image_alpha&lt;1 &amp;&amp; PlayerHidden==false){
+if(image_alpha&lt;1 &amp;&amp; !PlayerHidden){
         image_alpha += 0.02;
 }
 
@@ -107,37 +107,6 @@ else{
 // Temporary nosie test code
 if (input_check_pressed(BUTTON_ACTION)) {
     make_noise(x, y, 600);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="10">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///alter PlayerHidden with User Defined 0
-if(PlayerHidden==false)
-{
-    PlayerHidden=true;
-}
-else if(PlayerHidden==true)
-{
-    PlayerHidden=false;
 }
 </string>
           </argument>
