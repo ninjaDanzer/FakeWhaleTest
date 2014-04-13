@@ -205,17 +205,18 @@
     <object>objects\obj_painting_two</object>
     <object>objects\obj_politician_fat</object>
     <object>objects\obj_winscreen</object>
+    <object>objects\obj_Superwin</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_danzer_testroom</room>
     <rooms name="Game Levels">
       <room>rooms\rm_intro_slides</room>
       <room>rooms\Level_1</room>
-      <room>rooms\Level_2</room>
       <room>rooms\Intermission_1</room>
+      <room>rooms\Level_2</room>
       <room>rooms\Intermission_2</room>
       <room>rooms\rm_winscreen</room>
     </rooms>
-    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\room0</room>

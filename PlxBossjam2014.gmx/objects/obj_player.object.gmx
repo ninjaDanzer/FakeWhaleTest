@@ -65,7 +65,7 @@ if(input_check(BUTTON_CROUCH)) {
         speed_multiplier = 90 / room_speed;
         sprite_index=sp_player_croch_walk;
     
-}else if(input_check_pressed(BUTTON_SLAP)&amp;&amp; !PlayerSlapping){
+}else if(input_check_pressed(BUTTON_SLAP)&amp;&amp; !PlayerSlapping &amp;&amp; !PlayerHidden){
     PlayerSlapping=true;
     image_speed=1;
     audio_play_sound(snd_whale_slap,1,false);
@@ -126,6 +126,42 @@ if(PlayerSlapping==false){
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Superwin">
+      <action>
+        <libid>1</libid>
+        <id>321</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_message</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>The only winning move, is not to play.</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="obj_ventilation_shaft">
