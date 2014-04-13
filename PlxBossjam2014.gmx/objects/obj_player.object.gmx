@@ -59,12 +59,14 @@ var speed_multiplier=0;
 
 if(input_check(BUTTON_CROUCH)) {
         PlayerSlapping=false;
+        image_speed=0.1;
         speed_multiplier = 90 / room_speed;
         sprite_index=sp_player_croch_walk;
     
-}else if(input_check_pressed(BUTTON_SLAP)&amp;&amp; PlayerSlapping==false){
+}else if(input_check_pressed(BUTTON_SLAP)&amp;&amp; !PlayerSlapping){
     PlayerSlapping=true;
-    audio_play_sound(snd_whale_slap,101,false);
+    image_speed=1;
+    audio_play_sound(snd_whale_slap,1,false);
     sprite_index=sp_player_slap;
 }
 else if(PlayerSlapping==false){
@@ -92,7 +94,7 @@ if(image_alpha&lt;1 &amp;&amp; !PlayerHidden){
 }
 
 //Switch stationary and moving + walking sound
-if(PlayerSlapping==false){
+if(!PlayerSlapping){
 if(input_movement_x()==0){
     image_speed=0;
     audio_pause_sound(snd_whale_walking_stone_second);
@@ -103,7 +105,7 @@ else{
     audio_resume_sound(snd_whale_walking_stone_second);
     image_speed=0.1;
     }
-} else image_speed=0.1;
+}
 // Temporary nosie test code
 if (input_check_pressed(BUTTON_ACTION)) {
     make_noise(x, y, 600);
@@ -131,6 +133,7 @@ if (input_check_pressed(BUTTON_ACTION)) {
           <argument>
             <kind>1</kind>
             <string>PlayerSlapping=false;
+image_speed=0.25;
 //image_index=sp_player_mockup;
 </string>
           </argument>

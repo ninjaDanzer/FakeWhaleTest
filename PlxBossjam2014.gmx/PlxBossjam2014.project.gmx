@@ -78,15 +78,16 @@
       <sprite>sprites\sp_guard_raise_gun</sprite>
       <sprite>sprites\sp_guard_lower_gun</sprite>
       <sprite>sprites\sp_guard_standing</sprite>
+      <sprite>sprites\sp_guard_die</sprite>
+      <sprite>sprites\sp_guard_dead</sprite>
     </sprites>
     <sprite>sprites\sp_testslide</sprite>
     <sprite>sprites\sp_testslide_2</sprite>
     <sprite>sprites\obj_collision</sprite>
     <sprite>sprites\sr_rgb_noise</sprite>
     <sprite>sprites\sp_newspaper</sprite>
-    <sprite>sprites\sp_drawer</sprite>
-    <sprite>sprites\sp_ceiling_lamp</sprite>
-    <sprite>sprites\sp_table_lamp</sprite>
+    <sprite>sprites\sp_politician_fat</sprite>
+    <sprite>sprites\sp_drawer_front</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
