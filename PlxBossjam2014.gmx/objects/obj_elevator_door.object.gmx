@@ -33,6 +33,31 @@ image_speed=0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>obj_player.PlayerHidden = 0;
+obj_player.x = endpoint_x;
+obj_player.y = endpoint_y+16;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
@@ -53,10 +78,10 @@ image_speed=0;
             <string>PlayerInteraction = !PlayerInteraction;
 audio_play_sound(snd_elevator_button_press,1,false);
 image_speed=0.1;
-obj_player.x = endpoint_x;
-obj_player.y = endpoint_y;
 
-obj_player.PlayerHidden = !obj_player.PlayerHidden
+alarm[0] = room_speed*2;
+
+obj_player.PlayerHidden = 1;
 </string>
           </argument>
         </arguments>

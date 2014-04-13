@@ -169,17 +169,17 @@
     <object>objects\obj_noise_overlay</object>
   </objects>
   <rooms name="rooms">
+    <rooms name="Game Levels">
+      <room>rooms\Level_1</room>
+      <room>rooms\Intermission_1</room>
+      <room>rooms\Intermission_2</room>
+    </rooms>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
     <room>rooms\rm_game_over</room>
-    <rooms name="Game Levels">
-      <room>rooms\Level_1</room>
-      <room>rooms\Intermission_1</room>
-      <room>rooms\Intermission_2</room>
-    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -26,12 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///Add variable to tell if hidden or not.
-PlayerHidden = false;
+PlayerHidden = 0;
 PlayerInteracting = false;
 PlayerSlapping=false;
+fade_value = 0;
 //audio_play_sound(snd_whale_walking_first, 100, true);
 audio_play_sound(snd_whale_walking_stone_second, 100, true);
 image_speed=0;
+y+=16;
 </string>
           </argument>
         </arguments>
@@ -84,12 +86,22 @@ else if(input_movement_x() &gt; 0)  {
 x += input_movement_x() * speed_multiplier;
 
 //fade player
-if(image_alpha&gt;0 &amp;&amp; PlayerHidden){
-        image_alpha -= 0.02;
+if(PlayerHidden == 0){
+    if(image_alpha &lt; 1.0) {
+        fade_value += 0.1;
+    }
+    image_alpha = fade_value;
 }
-if(image_alpha&lt;1 &amp;&amp; !PlayerHidden){
-        image_alpha += 0.02;
+else if (PlayerHidden == 1)
+{
+    if(image_alpha &gt; 0) {
+        fade_value -= 0.1;
+    }
+//    fade_value -= 2/(room_speed*1);
+    fade_value -= 0.1;
+    image_alpha = fade_value;
 }
+
 
 //Switch stationary and moving + walking sound
 if(PlayerSlapping==false){
@@ -137,6 +149,29 @@ if (input_check_pressed(BUTTON_ACTION)) {
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(64,64,PlayerHidden);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -155,8 +190,7 @@ if (input_check_pressed(BUTTON_ACTION)) {
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(64,72,x);
-draw_text(128,72,y);
+
 </string>
           </argument>
         </arguments>
