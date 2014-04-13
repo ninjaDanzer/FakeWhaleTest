@@ -94,6 +94,14 @@
     <sprite>sprites\sp_drawer_front</sprite>
     <sprite>sprites\sp_painting_one</sprite>
     <sprite>sprites\sp_painting_two</sprite>
+    <sprites name="slides">
+      <sprite>sprites\spr_slide1</sprite>
+      <sprite>sprites\spr_slide2</sprite>
+      <sprite>sprites\spr_slide3</sprite>
+      <sprite>sprites\spr_slide4</sprite>
+      <sprite>sprites\spr_slide5</sprite>
+      <sprite>sprites\spr_slide6</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
@@ -183,13 +191,14 @@
     <object>objects\obj_politician_fat</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_level_mockup</room>
     <rooms name="Game Levels">
+      <room>rooms\rm_intro_slides</room>
       <room>rooms\Level_1</room>
       <room>rooms\Intermission_1</room>
       <room>rooms\Intermission_2</room>
       <room>rooms\Level_2</room>
     </rooms>
+    <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\room0</room>
