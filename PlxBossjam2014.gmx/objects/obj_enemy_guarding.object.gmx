@@ -3,7 +3,7 @@
   <spriteName>sp_guard_walking</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-11</depth>
+  <depth>-14</depth>
   <persistent>0</persistent>
   <parentName>obj_enemy_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
