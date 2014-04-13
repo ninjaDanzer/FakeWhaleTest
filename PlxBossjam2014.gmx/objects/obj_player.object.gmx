@@ -85,17 +85,15 @@ else if(input_movement_x() &gt; 0)  {
 //fade player
 if(PlayerHidden == 0){
     if(image_alpha &lt; 1.0) {
-        fade_value += 0.1;
+        fade_value += 1/room_speed;
     }
     image_alpha = fade_value;
 }
 else if (PlayerHidden == 1)
 {
     if(image_alpha &gt; 0) {
-        fade_value -= 0.1;
+        fade_value -= 1/room_speed;
     }
-//    fade_value -= 2/(room_speed*1);
-    fade_value -= 0.1;
     image_alpha = fade_value;
 }
 
@@ -166,7 +164,7 @@ if(PlayerSlapping==false){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(64,64,PlayerHidden);
+            <string>draw_text(64,64,fade_value);
 </string>
           </argument>
         </arguments>
