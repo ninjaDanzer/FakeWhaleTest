@@ -290,6 +290,9 @@ if(state == 4) {
         movedir = 1.0;
         image_xscale = 1;
     }
+    if (abs(x - obj_player.x) &lt; 5) {
+        movedir = 0;
+    }
     
     if (abs(x - obj_player.x) &lt; 300 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden and (y &gt; obj_player.y - 500 and y &lt; obj_player.y + 50)) {
         state = 5;
