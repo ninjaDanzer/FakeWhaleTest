@@ -124,7 +124,7 @@ game_over();
           <argument>
             <kind>1</kind>
             <string>/// Reduce state
-state = state - 1;
+state = 0;
 </string>
           </argument>
         </arguments>
@@ -279,7 +279,7 @@ if(state == 3) {
 
 //Try to find and murder player
 if(state == 4) {
-    if( (alarm[1] &lt;= 0 )) {
+    if( (alarm[1] &lt;= 0 ) or (abs(x - obj_player.x) &lt; 1000 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden and (y &gt; obj_player.y - 500 and y &lt; obj_player.y + 50))) {
         alarm[1] = room_speed * 10;
     }
     if( obj_player.x &lt; x) {
@@ -290,8 +290,11 @@ if(state == 4) {
         movedir = 1.0;
         image_xscale = 1;
     }
+    if (abs(x - obj_player.x) &lt; 5) {
+        movedir = 0;
+    }
     
-    if(abs(x - obj_player.x) &lt; 300 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden and (y &gt; obj_player.y - 500 and y &lt; obj_player.y + 50)) {
+    if (abs(x - obj_player.x) &lt; 300 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden and (y &gt; obj_player.y - 500 and y &lt; obj_player.y + 50)) {
         state = 5;
         sprite_index = sp_guard_raise_gun;
         image_index = 0;

@@ -26,12 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///Add variable to tell if hidden or not.
-PlayerHidden = false;
+PlayerHidden = 0;
 PlayerInteracting = false;
 PlayerSlapping=false;
+fade_value = 0;
 //audio_play_sound(snd_whale_walking_first, 100, true);
 audio_play_sound(snd_whale_walking_stone_second, 100, true);
 image_speed=0;
+y+=16;
 </string>
           </argument>
         </arguments>
@@ -82,34 +84,43 @@ else if(input_movement_x() &gt; 0)  {
     image_xscale = 1;
 }
 
-//move player
-x += input_movement_x() * speed_multiplier;
-
 //fade player
-if(image_alpha&gt;0 &amp;&amp; PlayerHidden){
-        image_alpha -= 0.02;
+if(PlayerHidden == 0){
+    if(image_alpha &lt; 1.0) {
+        fade_value += 1/room_speed;
+    }
+    image_alpha = fade_value;
 }
-if(image_alpha&lt;1 &amp;&amp; !PlayerHidden){
-        image_alpha += 0.02;
+else if (PlayerHidden == 1)
+{
+    if(image_alpha &gt; 0) {
+        fade_value -= 1/room_speed;
+    }
+    image_alpha = fade_value;
 }
+
 
 //Switch stationary and moving + walking sound
-if(!PlayerSlapping){
-if(input_movement_x()==0){
-    image_speed=0;
-    audio_pause_sound(snd_whale_walking_stone_second);
-    //audio_pause_sound(snd_whale_walking_first);
-}
-else{ 
-    //audio_resume_sound(snd_whale_walking_first);
-    audio_resume_sound(snd_whale_walking_stone_second);
-    image_speed=0.1;
+if(PlayerSlapping==false){
+    if(input_movement_x()==0 or PlayerHidden){
+        image_speed=0;
+        audio_pause_sound(snd_whale_walking_stone_second);
+        //audio_pause_sound(snd_whale_walking_first);
+    }
+    else{ 
+        //audio_resume_sound(snd_whale_walking_first);
+        audio_resume_sound(snd_whale_walking_stone_second);
+        image_speed=0.1;
+        
+        //move player
+        x += input_movement_x() * speed_multiplier;
+        
+        if (!input_check(BUTTON_CROUCH)) {
+            make_noise(x, y, 300);
+        }
     }
 }
-// Temporary nosie test code
-if (input_check_pressed(BUTTON_ACTION)) {
-    make_noise(x, y, 600);
-}
+>>>>>>> d1acd4a8d9b8f7ab56b39b38051d2136b80d117f
 </string>
           </argument>
         </arguments>
@@ -140,6 +151,29 @@ image_speed=0.25;
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(64,64,fade_value);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -158,8 +192,7 @@ image_speed=0.25;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(64,72,x);
-draw_text(128,72,y);
+
 </string>
           </argument>
         </arguments>
