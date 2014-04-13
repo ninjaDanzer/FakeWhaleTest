@@ -54,6 +54,7 @@ if (input_check_pressed(BUTTON_SLAP)) {
     game_end();
 } else if (input_check_pressed(BUTTON_ACTION)) {
     room_goto(global.game_over_room);
+    ls_system_clear();
 }
 </string>
           </argument>

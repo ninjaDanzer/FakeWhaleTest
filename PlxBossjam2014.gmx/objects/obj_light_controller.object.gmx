@@ -34,7 +34,7 @@ You can toggle the whole system on and off with this function, as well
 as set the drawing mode, color of the "darkness" and whether or not to
 cover all shadow casters with darkness.
 */
-ls_system_properties(true, ls_dm_vivid, c_black, true);
+ls_system_properties(true, ls_dm_normal, c_black, true);
 
 /*
 When rendering lights, the system needs to know what views you want to use.
@@ -51,7 +51,7 @@ casting the light is.
 Spread is how many degrees the light should cover around the center, and
 precision is how many points should be used to define the light's shape.
 */
-mouselight = ls_light_create(mouse_x, mouse_y, 256, 360, 0, c_white, 32, false, true, 16);
+playerlight = ls_light_create(mouse_x, mouse_y, 320, 360, 0, c_white, 32, false, true, 16);
 
 with (parent_light_block) {
     /*First we must create an empty shadow shape for the block,
@@ -124,7 +124,9 @@ shadowcaps = false;
 Updating light properties is as simple as calling the correct function
 and passing the light ID to it.
 */
-ls_light_set_pos(mouselight, mouse_x, mouse_y);
+ls_light_set_pos(playerlight, obj_player.x, obj_player.y - 50);
+
+ls_light_set_visible(playerlight, obj_player.image_alpha &gt; 0);
 </string>
           </argument>
         </arguments>
