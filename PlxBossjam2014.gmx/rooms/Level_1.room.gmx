@@ -58,6 +58,9 @@
     <instance objName="obj_elevator_door" x="192" y="3584" name="inst_72149799" locked="0" code="endpoint_x = 320;&#xA;endpoint_y = 4032;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elevator_door" x="1344" y="2624" name="inst_5C5DFE16" locked="0" code="endpoint_x = 1472;&#xA;endpoint_y = 3584;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ventilation_shaft" x="192" y="2624" name="inst_34CD7FD6" locked="0" code="endpoint_x = 32;&#xA;endpoint_y = 32;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_animation_curtains" x="832" y="3584" name="inst_4DC733C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_animation_curtains" x="1856" y="3584" name="inst_CB90A786" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_animation_curtains" x="832" y="2624" name="inst_AC26FF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="1152" y="2624" name="inst_C66C8462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

@@ -27,6 +27,7 @@
     <sound>sound\snd_boss_no_chance</sound>
     <sound>sound\snd_gunshot</sound>
     <sound>sound\snd_victory</sound>
+    <sound>sound\snd_news_intro</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\Wrong</sprite>

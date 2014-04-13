@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>alarm[0] = room_speed*20;
+audio_play_music(snd_news_intro, false);
 </string>
           </argument>
         </arguments>
@@ -45,6 +46,27 @@
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_music();
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="8" enumb="64">
@@ -66,8 +88,10 @@
             <kind>1</kind>
             <string>draw_set_font(fnt_narkism);
 draw_set_color(make_color_rgb(50,50, 20) );
+draw_set_halign(fa_center);
+draw_text_ext_transformed(800,460, display_headline, -1,400,3,3.3,0);
 draw_set_halign(fa_left);
-draw_text_ext_transformed(430,468, display_text, -1,400,2,2.3,0);
+draw_text_ext_transformed(430,518, display_text, -1,400,2,2.3,0);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
 </string>
