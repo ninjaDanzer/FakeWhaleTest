@@ -87,6 +87,7 @@
     <instance objName="obj_round_window_light" x="896" y="1984" name="inst_AD5A8735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_round_window_light" x="1216" y="1984" name="inst_C3CCA39E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_round_window_light" x="1536" y="1984" name="inst_7E5DE24E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_init_everything" x="256" y="3776" name="inst_5269FC7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_drawer" x="384" y="4032" name="inst_BFF54787" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wardrobe_doors" x="832" y="4032" name="inst_C4F2A816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elevator_door" x="1649" y="4030" name="inst_8E324F28" locked="0" code="endpoint_x = 1728;&#xA;endpoint_y = 3520;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
