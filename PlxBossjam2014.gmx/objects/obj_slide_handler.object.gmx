@@ -11,54 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>slide_nr</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>currently_playing</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -73,148 +25,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>change_slide(-1.0, 0, spr_slide1, "Trouble was brewing in Korrekt city.#But then again, it always did. ",0,0,2);
+            <string>global.slides = 0;
+
+add_slide(-1.0, 0, spr_slide1, "Trouble was brewing in Korrekt City. All over, like a plague. From the richest villas to the poorest ghettos. This is the city where I chose to make my mark, and by God did it happen.",0,0,1.5, snd_slide0);
+add_slide(-1.0, 0, spr_slide1, "I had a past, of course, but there's no use talking about it now. What's important is: there's an election year and so far the same rotten guy had always won, but there's a first time for everything.",0,0,1.5, snd_slide1);
+add_slide(-1.0, 0, spr_slide3, "The sun was setting as I entered the cigarette-laden bar at Winding Street. I had an informant to meet.",0,0,1.5, snd_slide2);
+add_slide(-1.0, 0, spr_slide4, "So, what brings a whale to this godforsaken hellhole?",0,0,2, snd_dix1);
+add_slide(-1.0, 0, spr_slide4, "The information, Dix. I need the information.",0,0,2, snd_slide3);
+add_slide(-1.0, 0, spr_slide4, "Yeah, yeah. What's a whale gonna do with it anyways?",0,0,2, snd_dix2);
+add_slide(-1.0, 0, spr_slide4, "Become mayor of this cursed town.",0,0,2, snd_slide4);
+add_slide(0, 0, spr_slide6, "I knew I couldn't win by fair means, so I decided to pay my dear friend, a local politician, a visit. I just might make him see things my way...",0,0,1, snd_slide5);
+
+
+slide = 0;
 slide_x = 0;
 slide_y = 0;
 fade_in = 1;
 fade_value = 0;
-alarm_time = room_speed*6;
-alarm[0] = room_speed*6;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alarm[1] = alarm_time;
-slide_x = 0;
-slide_y = 0;
-change_slide(0.5, 0, spr_slide2, "Corrupt politicians had killed my wife,#and i was out for revenge",-400,0,2);
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="3">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alarm[1] = alarm_time;
-slide_x = 0;
-slide_y = 0;
-change_slide(0.5, 0, spr_slide2, "Corrupt politicians had killed my wife,#and i was out for revenge",-400,0,2);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alarm[1] = alarm_time;
-slide_x = 0;
-slide_y = 0;
-change_slide(0.5, 0, spr_slide2, "Corrupt politicians had killed my wife,#and i was out for revenge",-400,0,2);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alarm[1] = alarm_time;
-slide_x = 0;
-slide_y = 0;
-change_slide(0.5, 0, spr_slide2, "Corrupt politicians had killed my wife,#and i was out for revenge",-400,-500,2);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alarm[1] = alarm_time;
-slide_x = 0;
-slide_y = 0;
-change_slide(0.5, 0, spr_slide2, "Corrupt politicians had killed my wife,#and i was out for revenge",-800,-500,1.25);
-
+snd = global.slide_audio[slide];
+audio_play_sound(snd, 1, false);
 </string>
           </argument>
         </arguments>
@@ -237,25 +67,39 @@ change_slide(0.5, 0, spr_slide2, "Corrupt politicians had killed my wife,#and i 
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( !sound_isplaying(snd_whale_theme_song) &amp;&amp; currently_playing == 0 ) {
-    audio_play_sound(snd_whale_theme_song,1,false)
-    currently_playing = 1;
+            <string>if (!audio_music_is_playing()) {
+    audio_play_music(snd_whale_creme_song, true);
 }
 
-slide_x += x_movement;
-slide_y += y_movement;
+slide_x += global.slide_x_movement[slide];
+if (global.slide_sprite_x[slide] + slide_x + sprite_get_width(global.slide_slide_sprite[slide]) * global.slide_sprite_scale[slide] &gt; room_width) {
+    global.slide_x_movement[slide] = 0;
+}
+
+slide_y += global.slide_y_movement[slide];
 
 if(fade_in == 1){
-    fade_value += 2/(room_speed*6);
-    if(fade_value &gt; 1){
+    fade_value += 2/(room_speed*2);
+    if (input_check_pressed(BUTTON_ACTION)){
+        audio_stop_sound(snd);
         fade_in = 0;
+        fade_value = 1;
     }
 }
 else
 {
-    fade_value -= 2/(room_speed*6);
+    fade_value -= 2/(room_speed*2);
     if(fade_value &lt; 0.00){
         fade_in = 1;
+        slide_x = 0;
+        slide_y = 0;
+        slide++;
+        if (slide &gt;= global.slides) {
+            room_goto_next();
+        } else {
+            snd = global.slide_audio[slide];
+            audio_play_sound(snd, 1, false);
+        }
     }
 }
 </string>
@@ -283,9 +127,11 @@ else
             <string>draw_set_font(fnt_monty)
 draw_set_color(c_white);
 draw_set_halign(fa_center);
-draw_text_transformed(960,room_height-128, display_text,2,2,0);
+draw_set_valign(fa_middle);
+draw_text_ext(room_width/2, room_height-64, global.slide_display_text[slide], -1, room_width - 200);
 draw_text(32,32, alarm[0]);
 draw_set_color(c_black);
+draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 </string>
           </argument>
@@ -309,10 +155,10 @@ draw_set_halign(fa_left);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(slide_sprite,0, slide_x+sprite_x, slide_y+sprite_y,sprite_scale,sprite_scale,0,c_white,fade_value   );
+            <string>draw_sprite_ext(global.slide_slide_sprite[slide],0, slide_x+global.slide_sprite_x[slide], slide_y+global.slide_sprite_y[slide],global.slide_sprite_scale[slide],global.slide_sprite_scale[slide],0,c_white,fade_value   );
 draw_set_color(c_black);
-draw_rectangle(0,0,room_width, 256, false);
-draw_rectangle(0,room_height,room_width,room_height-256, false);
+draw_rectangle(0,0,room_width, 128, false);
+draw_rectangle(0,room_height,room_width,room_height-128, false);
 </string>
           </argument>
         </arguments>

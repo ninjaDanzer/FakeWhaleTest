@@ -28,6 +28,16 @@
     <sound>sound\snd_gunshot</sound>
     <sound>sound\snd_victory</sound>
     <sound>sound\snd_news_intro</sound>
+    <sounds name="Slides">
+      <sound>sound\snd_slide0</sound>
+      <sound>sound\snd_slide1</sound>
+      <sound>sound\snd_slide2</sound>
+      <sound>sound\snd_slide3</sound>
+      <sound>sound\snd_slide4</sound>
+      <sound>sound\snd_slide5</sound>
+      <sound>sound\snd_dix1</sound>
+      <sound>sound\snd_dix2</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\Wrong</sprite>
@@ -134,7 +144,7 @@
       <script>scripts\resume_game.gml</script>
     </scripts>
     <script>scripts\game_over.gml</script>
-    <script>scripts\change_slide.gml</script>
+    <script>scripts\add_slide.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader_grayscale.shader</shader>
