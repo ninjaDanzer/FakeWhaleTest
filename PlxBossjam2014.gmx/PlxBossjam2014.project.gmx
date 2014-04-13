@@ -208,7 +208,6 @@
     <object>objects\obj_Superwin</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_danzer_testroom</room>
     <rooms name="Game Levels">
       <room>rooms\rm_intro_slides</room>
       <room>rooms\Level_1</room>
@@ -219,6 +218,7 @@
     </rooms>
     <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_slide_testing</room>
+    <room>rooms\rm_danzer_testroom</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
     <room>rooms\rm_game_over</room>
