@@ -6,7 +6,7 @@
   <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>obj_interaction_parent</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>sp_door</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>

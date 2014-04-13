@@ -44,6 +44,7 @@
     <sprite>sprites\sp_tile_mockup</sprite>
     <sprite>sprites\sp_player_croch_walk</sprite>
     <sprite>sprites\sp_player_mockup</sprite>
+    <sprite>sprites\mask_player</sprite>
     <sprite>sprites\sp_player_slap</sprite>
     <sprite>sprites\sp_player_interact</sprite>
     <sprite>sprites\sp_tile_mockup_two</sprite>
@@ -94,7 +95,7 @@
     </sprites>
     <sprite>sprites\sp_testslide</sprite>
     <sprite>sprites\sp_testslide_2</sprite>
-    <sprite>sprites\obj_collision</sprite>
+    <sprite>sprites\spr_collision</sprite>
     <sprite>sprites\sr_rgb_noise</sprite>
     <sprite>sprites\sp_newspaper</sprite>
     <sprite>sprites\sp_ceiling_lamp</sprite>
