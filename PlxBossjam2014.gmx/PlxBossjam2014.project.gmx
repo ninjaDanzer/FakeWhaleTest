@@ -135,6 +135,7 @@
     <objects name="Light">
       <object>objects\obj_light_controller</object>
       <object>objects\obj_ambient_light</object>
+      <object>objects\obj_window_light</object>
       <object>objects\parent_light_block</object>
       <object>objects\obj_ceiling_lamp</object>
     </objects>
@@ -176,12 +177,12 @@
     <object>objects\obj_noise_overlay</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_level_mockup</room>
     <rooms name="Game Levels">
       <room>rooms\Level_1</room>
       <room>rooms\Intermission_1</room>
       <room>rooms\Intermission_2</room>
     </rooms>
-    <room>rooms\rm_level_mockup</room>
     <room>rooms\rm_danzer_testroom</room>
     <room>rooms\rm_slide_testing</room>
     <room>rooms\room0</room>
