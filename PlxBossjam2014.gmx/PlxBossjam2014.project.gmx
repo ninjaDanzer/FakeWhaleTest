@@ -114,6 +114,7 @@
     </sprites>
     <sprite>sprites\sp_murica_flag</sprite>
     <sprite>sprites\sp_murica_flag_dual</sprite>
+    <sprite>sprites\sp_winscreen</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_primary_mockup</background>
