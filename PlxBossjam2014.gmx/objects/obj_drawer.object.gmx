@@ -70,7 +70,7 @@
     var i;
     var all_done = true;
     for (i=0; i&lt;instance_number(obj_drawer); i++) {
-        var drawer = instance_find(obj_drawer, 0);
+        var drawer = instance_find(obj_drawer, i);
         if (!drawer.evidence_planted) {
             all_done = false;
             break;
@@ -78,7 +78,7 @@
     }
     if (all_done) {
         message_push("All evidence planted!");
-        alarm[0] = room_speed*2;
+        alarm[0] = room_speed*10;
     }
 }
 </string>
