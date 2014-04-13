@@ -119,7 +119,7 @@
     <instance objName="obj_ventilation_shaft" x="192" y="2624" name="inst_34CD7FD6" locked="0" code="endpoint_x = 128;&#xA;endpoint_y = 3072;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ventilation_shaft" x="1512" y="1125" name="inst_33384A7E" locked="0" code="endpoint_x = 1472;&#xA;endpoint_y = 1152;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ventilation_shaft" x="191" y="3069" name="inst_179D5D26" locked="0" code="endpoint_x = 128;&#xA;endpoint_y = 2624;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ventilation_shaft" x="187" y="2107" name="inst_749D35A1" locked="0" code="endpoint_x = 1856;&#xA;endpoint_y = 3072;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ventilation_shaft" x="187" y="2107" name="inst_749D35A1" locked="0" code="endpoint_x = 1472;&#xA;endpoint_y = 1152;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="832" y="3584" name="inst_4DC733C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="1856" y="3584" name="inst_CB90A786" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_animation_curtains" x="832" y="2624" name="inst_AC26FF0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
