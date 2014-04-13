@@ -28,6 +28,7 @@
             <string>///Add variable to tell if hidden or not.
 PlayerHidden = false;
 PlayerInteracting = false;
+PlayerSlapping=false;
 //audio_play_sound(snd_whale_walking_first, 100, true);
 audio_play_sound(snd_whale_walking_stone_second, 100, true);
 image_speed=0;
@@ -54,13 +55,19 @@ image_speed=0;
           <argument>
             <kind>1</kind>
             <string>//Check if the player crouches and modify movement speed + animation
-var speed_multiplier;
+var speed_multiplier=0;
 
 if(input_check(BUTTON_CROUCH)) {
+        PlayerSlapping=false;
         speed_multiplier = 90 / room_speed;
         sprite_index=sp_player_croch_walk;
     
-} else {
+}else if(input_check_pressed(BUTTON_SLAP)&amp;&amp; PlayerSlapping==false){
+    PlayerSlapping=true;
+    audio_play_sound(snd_whale_slap,101,false);
+    sprite_index=sp_player_slap;
+}
+else if(PlayerSlapping==false){
     speed_multiplier = 180 / room_speed;
     sprite_index=sp_player_mockup;
 }
@@ -76,11 +83,6 @@ else if(input_movement_x() &gt; 0)  {
 //move player
 x += input_movement_x() * speed_multiplier;
 
-//slap slap
-if(input_check_pressed(BUTTON_SLAP)){
-    image_index=sp_player_slap;
-}
-
 //fade player
 if(image_alpha&gt;0 &amp;&amp; PlayerHidden){
         image_alpha -= 0.02;
@@ -90,6 +92,7 @@ if(image_alpha&lt;1 &amp;&amp; !PlayerHidden){
 }
 
 //Switch stationary and moving + walking sound
+if(PlayerSlapping==false){
 if(input_movement_x()==0){
     image_speed=0;
     audio_pause_sound(snd_whale_walking_stone_second);
@@ -100,7 +103,7 @@ else{
     audio_resume_sound(snd_whale_walking_stone_second);
     image_speed=0.1;
     }
-
+} else image_speed=0.1;
 // Temporary nosie test code
 if (input_check_pressed(BUTTON_ACTION)) {
     make_noise(x, y, 600);
@@ -127,7 +130,8 @@ if (input_check_pressed(BUTTON_ACTION)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index=sp_player_mockup;
+            <string>PlayerSlapping=false;
+//image_index=sp_player_mockup;
 </string>
           </argument>
         </arguments>
