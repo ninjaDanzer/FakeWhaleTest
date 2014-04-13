@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Create a static light
-light = ls_light_create(x,y,128, 360, 0, c_white, 32, true, true, 24);
+light = ls_light_create(x,y,256, 360, 0, c_white, 32, true, true, 24);
 </string>
           </argument>
         </arguments>

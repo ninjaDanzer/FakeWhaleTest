@@ -6,7 +6,7 @@
   <depth>-14</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>mask_player</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -113,7 +113,10 @@ if(PlayerSlapping==false){
         image_speed=0.1;
         
         //move player
-        x += input_movement_x() * speed_multiplier;
+        var newx = input_movement_x() * speed_multiplier;
+        if (place_free(x + newx*8, y))
+            x += newx;
+        
         
         if (!input_check(BUTTON_CROUCH)) {
             make_noise(x, y, 300);
