@@ -175,6 +175,7 @@
     <rooms name="Game Levels">
       <room>rooms\Level_1</room>
       <room>rooms\Intermission_1</room>
+      <room>rooms\Intermission_2</room>
     </rooms>
   </rooms>
   <help>

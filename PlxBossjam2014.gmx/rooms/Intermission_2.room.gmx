@@ -50,7 +50,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_news_controller" x="0" y="0" name="inst_D1300E0F" locked="0" code="display_text = &quot;Local politician viciously slapped to death during sunday night. 'Experts' claim whale involvement in the incident, due to nano-biologic traces, infrared imaging, computer simulations with advanced GUI algorithms in visual basic component pointers using macro-scale linked lists, flipper prints on rug, blowhole reconstruction and# 'A good hunch.'.&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_news_controller" x="0" y="0" name="inst_D1300E0F" locked="0" code="display_text = &quot;Politician Javier de los Linguos was arrested yesterday after a police raid uncovered pornographic images in his drawers displaying underage seals in compromising poses. It is assumed that recent murder of the prominent politician named 'A local politician' was orchestrated by Javier, which yet again prooves that so called 'Experts' are always wrong.&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
