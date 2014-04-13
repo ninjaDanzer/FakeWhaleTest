@@ -148,6 +148,7 @@
       <object>objects\obj_alarm</object>
       <object>objects\obj_interaction_parent</object>
       <object>objects\obj_drawer</object>
+      <object>objects\obj_ventilation_shaft</object>
     </objects>
     <objects name="testing stuff">
       <object>objects\obj_player</object>

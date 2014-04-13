@@ -164,7 +164,7 @@ if(PlayerSlapping==false){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(64,64,fade_value);
+            <string>//draw_text(64,64,fade_value);
 </string>
           </argument>
         </arguments>
