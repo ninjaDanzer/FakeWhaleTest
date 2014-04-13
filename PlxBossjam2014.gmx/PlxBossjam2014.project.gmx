@@ -159,6 +159,7 @@
       <object>objects\obj_light_controller</object>
       <object>objects\obj_ambient_light</object>
       <object>objects\obj_window_light</object>
+      <object>objects\obj_round_window_light</object>
       <object>objects\parent_light_block</object>
       <object>objects\obj_ceiling_lamp</object>
     </objects>
