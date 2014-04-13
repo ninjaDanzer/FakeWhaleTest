@@ -170,6 +170,7 @@ if(state == 0) {
         if( !place_free( x + movedir * speed_modifier, y) ) {
             movedir *= -1;
             image_xscale *= -1;
+            x += movedir * speed_modifier * 20;
         }
     }
     if(abs(x - obj_player.x) &lt; 600 and ((x &lt; obj_player.x and image_xscale = 1) or (x &gt; obj_player.x and image_xscale = -1)) and !obj_player.PlayerHidden and (y &gt; obj_player.y - 100 and y &lt; obj_player.y + 100)) {
@@ -269,7 +270,7 @@ if (state == 5) {
     }
 }
 
-x += 1 * movedir * speed_modifier;
+x += movedir * speed_modifier;
 </string>
           </argument>
         </arguments>

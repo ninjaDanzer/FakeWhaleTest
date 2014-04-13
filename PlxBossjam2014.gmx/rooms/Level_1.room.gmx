@@ -4,7 +4,7 @@
   <width>2048</width>
   <height>4096</height>
   <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -100,8 +100,8 @@
     <instance objName="obj_ambient_light" x="608" y="3856" name="inst_A79FAF27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ambient_light" x="992" y="3856" name="inst_6C628D41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ambient_light" x="1456" y="3840" name="inst_4AD56FB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="1969" y="4033" name="inst_C9D4EF51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="946" y="3072" name="inst_A59C50FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="2016" y="4032" name="inst_C9D4EF51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="992" y="3072" name="inst_A59C50FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elevator_door" x="192" y="4032" name="inst_6C1863B6" locked="0" code="endpoint_x = 320;&#xA;endpoint_y = 3584;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elevator_door" x="1344" y="3584" name="inst_41BFAB02" locked="0" code="endpoint_x = 1728;&#xA;endpoint_y = 3072;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elevator_door" x="192" y="3584" name="inst_72149799" locked="0" code="endpoint_x = 320;&#xA;endpoint_y = 4032;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
