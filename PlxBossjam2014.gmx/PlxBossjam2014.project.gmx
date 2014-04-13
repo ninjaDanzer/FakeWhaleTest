@@ -91,6 +91,7 @@
     <background>background\bg_tile</background>
     <background>background\bg_real_tileset</background>
     <background>background\bg_newspaper</background>
+    <background>background\bg_sky</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

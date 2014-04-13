@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0.1;
+            <string>audio_play_sound(snd_door_open,100,false);
+image_speed=0.1;
 </string>
           </argument>
         </arguments>
