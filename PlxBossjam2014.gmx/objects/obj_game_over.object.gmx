@@ -51,7 +51,7 @@
             <string>image_alpha += 1 / room_speed;
 
 if (input_check_pressed(BUTTON_SLAP)) {
-    game_end();
+    //game_end();
 } else if (input_check_pressed(BUTTON_ACTION)) {
     room_goto(global.game_over_room);
     ls_system_clear();
